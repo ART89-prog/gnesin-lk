@@ -30,6 +30,7 @@
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="css/nice-select.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/styles-lk.css">
 
@@ -133,7 +134,7 @@
 					<div class="cont">
 						<div class="main-content_aside">
 							<div class="aside_photo">
-								<img src="images/artists1.jpg" alt="">
+								<img data-src="images/artists1.jpg" alt="" class="lozad">
 							</div>
 							<div class="aside_name">Валерия Иванова</div>
 							<div class="aside_nickname">VALERIA</div>
@@ -143,25 +144,25 @@
 							<ul class="aside_links">
 								<li>
 									<a href="#">
-										<img src="images/profil.svg" alt="">
+										<img data-src="images/profil.svg" alt="" class="lozad">
 										<span>Профиль</span>
 									</a>	
 								</li>
 								<li>
 									<a href="#">
-										<img src="images/settings.svg" alt="">
+										<img data-src="images/settings.svg" alt="" class="lozad">
 										<span>Настройки</span>
 									</a>	
 								</li>
 								<li>
 									<a href="#">
-										<img src="images/exit.svg" alt="">
+										<img data-src="images/exit.svg" alt="" class="lozad">
 										<span>Выйти</span>
 									</a>	
 								</li>
 								<li>
 									<a href="#">
-										<img src="images/question.svg" alt="">
+										<img data-src="images/question.svg" alt="" class="lozad">
 										<span>Задать вопрос</span>
 									</a>	
 								</li>								
@@ -169,43 +170,47 @@
 						</div>
 						<div class="main-content_block">
 							<div class="main-content_item">
-								<div class="main-content_item-title">Статус Релизов</div>
-								<table>
-									<thead>
-										<tr>
-											<th></th>
-											<th>РЕЛИЗы</th>
-											<th>ДАТА</th>
-											<th>СТАТУС</th>
-										</tr>	
-									</thead>
-									<tbody>
-										<tr>
-											<td><img src="images/releases1.jpg" alt=""></td>
-											<td>Название трека</td>
-											<td>00.00.0000</td>
-											<td>На расмотрении</td>
-										</tr>
-										<tr>
-											<td><img src="images/releases2.jpg" alt=""></td>
-											<td>Название трека</td>
-											<td>00.00.0000</td>
-											<td>Отказано</td>
-										</tr>
-										<tr>
-											<td><img src="images/releases3.jpg" alt=""></td>
-											<td>Название трека</td>
-											<td>00.00.0000</td>
-											<td>Отгружено</td>
-										</tr>	
-									</tbody>									
-								</table>
+								<div class="releases_bottom">
+									<div class="main-content_item-title">Статус Релизов</div>
+								</div>	
+								<div class="table-wrap">
+									<table>
+										<thead>
+											<tr>
+												<th></th>
+												<th>РЕЛИЗы</th>
+												<th>ДАТА</th>
+												<th>СТАТУС</th>
+											</tr>	
+										</thead>
+										<tbody>
+											<tr>
+												<td><img data-src="images/releases1.jpg" alt="" class="lozad"></td>
+												<td>Название трека</td>
+												<td>00.00.0000</td>
+												<td class="status yellow">На расмотрении</td>
+											</tr>
+											<tr>
+												<td><img data-src="images/releases2.jpg" alt="" class="lozad"></td>
+												<td>Название трека</td>
+												<td>00.00.0000</td>
+												<td class="status red">Отказано</td>
+											</tr>
+											<tr>
+												<td><img data-src="images/releases3.jpg" alt="" class="lozad"></td>
+												<td>Название трека</td>
+												<td>00.00.0000</td>
+												<td class="status green">Отгружено</td>
+											</tr>	
+										</tbody>									
+									</table>	
+								</div>								
 							</div>
 
 							<div class="main-content_item">
 								<div class="releases_bottom">							
 									<div class="releases_left">
-										<div class="main-content_item-title">Статус Релизов</div>
+										<div class="main-content_item-title">ОТГРУЖЕННЫЕ Релизы</div>
 										<a href="#" class="releases_link contact_callback">Вся релизы</a>
 									</div>
 									<div class="slider-arrows"></div>
@@ -215,57 +220,49 @@
 										<div class="releases_item-img">
 											<img data-src="images/releases1.jpg" alt="" class="lozad">
 										</div>
-										<div class="releases_item-title">Имя артиста</div>
-										<div class="releases_item-text">Название трека</div>
+										<div class="releases_item-title">Название релиза</div>
 									</a>
 									<a href="#" class="releases_item">
 										<div class="releases_item-img">
 											<img data-src="images/releases2.jpg" alt="" class="lozad">
 										</div>
-										<div class="releases_item-title">Имя артиста</div>
-										<div class="releases_item-text">Название трека</div>
+										<div class="releases_item-title">Название релиза</div>
 									</a>
 									<a href="#" class="releases_item">
 										<div class="releases_item-img">
 											<img data-src="images/releases3.jpg" alt="" class="lozad">
 										</div>
-										<div class="releases_item-title">Имя артиста</div>
-										<div class="releases_item-text">Название трека</div>
+										<div class="releases_item-title">Название релиза</div>
 									</a>
 									<a href="#" class="releases_item">
 										<div class="releases_item-img">
 											<img data-src="images/releases4.jpg" alt="" class="lozad">
 										</div>
-										<div class="releases_item-title">Имя артиста</div>
-										<div class="releases_item-text">Название трека</div>
+										<div class="releases_item-title">Название релиза</div>
 									</a>	
 									<a href="#" class="releases_item">
 										<div class="releases_item-img">
 											<img data-src="images/releases1.jpg" alt="" class="lozad">
 										</div>
-										<div class="releases_item-title">Имя артиста</div>
-										<div class="releases_item-text">Название трека</div>
+										<div class="releases_item-title">Название релиза</div>
 									</a>
 									<a href="#" class="releases_item">
 										<div class="releases_item-img">
 											<img data-src="images/releases2.jpg" alt="" class="lozad">
 										</div>
-										<div class="releases_item-title">Имя артиста</div>
-										<div class="releases_item-text">Название трека</div>
+										<div class="releases_item-title">Название релиза</div>
 									</a>
 									<a href="#" class="releases_item">
 										<div class="releases_item-img">
 											<img data-src="images/releases3.jpg" alt="" class="lozad">
 										</div>
-										<div class="releases_item-title">Имя артиста</div>
-										<div class="releases_item-text">Название трека</div>
+										<div class="releases_item-title">Название релиза</div>
 									</a>
 									<a href="#" class="releases_item">
 										<div class="releases_item-img">
 											<img data-src="images/releases4.jpg" alt="" class="lozad">
 										</div>
-										<div class="releases_item-title">Имя артиста</div>
-										<div class="releases_item-text">Название трека</div>
+										<div class="releases_item-title">Название релиза</div>
 									</a>	
 								</div>	
 							</div>
@@ -277,40 +274,48 @@
 										<div class="main-content_item-title">МОИ ОТЧЕТЫ</div>
 										<select>
 											<option value="">
-												<img src="images/filter.svg" alt="">
+												<img data-src="images/filter.svg" alt="" class="lozad">
 												Отсортировать
 											</option>
 											<option value="">дате по возрастанию</option>
 											<option value="">дата по убыванию</option>
 										</select>
 									</div>
-									<a href="#" class="contact_callback modal_link" data-content="#callback_modal">
-										<img src="images/filter2.svg" alt="">
+									<a href="#" class="btn-filter modal_link" data-content="#filter">
+										<img data-src="images/filter2.svg" alt="" class="lozad">
 										<span>Фильтр</span>
 									</a>
 								</div>	
-								<table>
-									<tr>
-										<td>Отчетный период</td>
-										<td>ДАТА ЗАГРУЗКИ</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>1Q</td>
-										<td>00.00.0000</td>
-										<td><a href="#" download="">Скачать</a></td>
-									</tr>
-									<tr>
-										<td>2Q</td>
-										<td>00.00.0000</td>
-										<td><a href="#" download="">Скачать</a></td>
-									</tr>
-									<tr>
-										<td>3Q</td>
-										<td>00.00.0000</td>
-										<td><a href="#" download="">Скачать</a></td>
-									</tr>
-								</table>
+								<div class="table-wrap">
+									<table>
+										<thead>
+											<tr>
+												<th>Отчетный период</th>
+												<th>ДАТА ЗАГРУЗКИ</th>
+												<th></th>
+											</tr>	
+										</thead>
+										<tbody>
+											<tr>
+												<td>1Q</td>
+												<td>00.00.0000</td>
+												<td><a href="#" download="">Скачать</a></td>
+											</tr>
+											<tr>
+												<td>2Q</td>
+												<td>00.00.0000</td>
+												<td><a href="#" download="">Скачать</a></td>
+											</tr>
+											<tr>
+												<td>3Q</td>
+												<td>00.00.0000</td>
+												<td><a href="#" download="">Скачать</a></td>
+											</tr>	
+										</tbody>									
+									</table>	
+								</div>
+				
+								
 								<div class="pagination">
 									<a href="#" class="prev"><img src="images/arrow-prev.svg" alt=""></a>
 									<a href="#">1</a>
@@ -489,12 +494,47 @@
 						</div>
 						<button type="submit">Регистрация</button>
 					</form>
-				</div>
-
-				
+				</div>				
 			</div>
+		</section>
 
 
+		<section class="modal filter" id="filter">
+			<form class="filter_form">
+				<div class="filter_form-title">Фильтр</div>
+				<div class="filter_form-text">Года</div>
+				<div class="line">
+					<div class="field">
+						<input type="checkbox" name="agree" id="agree_check2" checked="">
+						<label for="agree_check2">2022</label>
+					</div>
+				</div>
+				<div class="line">
+					<div class="field">
+						<input type="checkbox" name="agree" id="agree_check3" checked="">
+						<label for="agree_check3">2021</label>
+					</div>
+				</div>
+				<div class="line">
+					<div class="field">
+						<input type="checkbox" name="agree" id="agree_check4" checked="">
+						<label for="agree_check4">2020</label>
+					</div>
+				</div>
+				<div class="line">
+					<div class="field">
+						<input type="checkbox" name="agree" id="agree_check5" checked="">
+						<label for="agree_check5">2019</label>
+					</div>
+				</div>
+				<div class="line">
+					<div class="field">
+						<input type="checkbox" name="agree" id="agree_check6" checked="">
+						<label for="agree_check6">2018</label>
+					</div>
+				</div>
+				<button type="submit">Применить</button>
+			</form>
 		</section>
 
 
@@ -504,8 +544,10 @@
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/lozad.min.js"></script>
 		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src="js/scripts-lk.js"></script>
 
 	
 	</body>
