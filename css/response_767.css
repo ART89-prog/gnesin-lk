@@ -1,0 +1,447 @@
+@media print, (max-width: 767px) {
+
+    :root {
+        --font_size: 15px;
+        --font_size_title: 30px;
+    }
+ 
+    .advantages_items {
+        margin-left: 0px;
+        margin-bottom: 0px;
+
+    }
+    .advantages_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .footer_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .footer_left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer_copyright {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .callback {
+        background: #F2EEE9;
+    }
+
+    .quote .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .quote_photo {
+        position: relative;
+    }
+    .quote_info {
+        max-width: 100%;
+    }
+    .quote_info-name::before {
+        right: 0;
+        top: -4px;
+        width: 154px;
+        height: 104px;
+    }
+    .advantages_title {
+        margin-bottom: 30px;
+    }
+    .first-section_title {
+        font-size: 34px;
+        margin-bottom: 12px;
+    }
+    .first-section_text {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 30px;
+    }
+    .first-section {
+        padding: 50px 0 50px;
+    }
+    .footer_items {
+        margin-bottom: 5px;
+    }
+    footer {
+        padding: 40px 0 20px;
+    }
+    .releases_top,
+    .artists_top {
+        margin-bottom: 20px;
+    }
+    .releases_link,
+    .artists_link {
+        display: none;
+    }
+    .releases_link-mob,
+    .artists_link-mob {
+        display: block;
+        margin: 30px auto 0;
+        width: 150px;
+    }
+    .artists .cont:before {
+        height: 79px;
+        left: 0;
+        bottom: -90px;
+        background-size: cover;
+    }
+    .artists {
+        padding: 40px 0 40px;
+    }
+    .artists {
+        margin-bottom: 90px;
+    }
+    .upload-file__label {
+        width: 100%;
+    }
+    .advantages_item_title {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 6px;
+    }
+
+    .news_right .news_item:nth-child(2), 
+    .news_left .news_item:nth-child(1) .news_item-info, 
+    .news_left .news_item:nth-child(1) .news_item-info,
+    .news_top .news_item:nth-child(2) .news_item-info,
+    .news_top .news_item:nth-child(1), 
+    .news_left .news_item:nth-child(2) .news_item-info, 
+    .news_left .news_item:nth-child(3) .news_item-info, 
+    .news_right .news_item:nth-child(1) .news_item-info {
+        padding: 17px;
+    }
+    .news_top .news_item:nth-child(1),
+    .news_top,
+    .news_left .news_item:nth-child(1),
+    .news_left .news_item:nth-child(2),
+    .news_left {
+        margin-bottom: 12px;
+    }
+    .news_right .news_item:nth-child(2) {
+        font-size: 27px;
+    }
+    .news_left .news_item:nth-child(2) {
+        width: 100%;
+        margin-right: 0;
+    }
+    .news_left .news_item:nth-child(3) {
+        width: 100%;
+    }
+    .news_right .news_item:nth-child(1) {
+        margin-right: 12px;
+        width: calc(50% - 6px);
+    }
+    .news_right .news_item:nth-child(2) {
+        width: calc(50% - 6px);
+    }
+    .news_top .news_item:nth-child(1) {
+        padding-bottom: 50px;
+    }
+    .news_left .news_item:nth-child(2) .news_item-img,
+    .news_left .news_item:nth-child(3) .news_item-img {
+        height: 335px;
+    }
+
+    .releases_item-title,
+    .artists_item-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .advantages, 
+    .quote, 
+    .callback, 
+    .news,
+    .block {
+        margin-bottom: 50px;
+    }
+    .releases_top, 
+    .news_head,
+    .text_block h1 {
+        margin-bottom: 25px;
+    }
+    .callback_title {
+        line-height: 38px;
+    }
+    .callback_title br {
+        display: none;
+    }
+    .callback_text {
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
+    form .line .field label {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+    .quote_photo {
+        bottom: -30px;
+    }
+    .quote {
+        padding: 80px 0 30px;
+    }
+
+    .about_quote {
+        padding: 50px 0px 50px;
+    }
+    .about h2 {
+        font-size: 20px;
+    }
+    .about_description-box {
+        margin-bottom: 25px;
+    }
+    .about_quote-text {
+        font-size: 18px;
+    }
+    .breadcrumbs {
+        margin-top: 118px;
+    }
+    .about {
+        margin-top: 50px;
+    }
+
+    .releases_subtitle {
+        font-size: 20px;
+    }
+    .post .text_block h2 {
+        font-size: 20px;
+    }
+    .releases_bottom {
+        margin-bottom: 15px;
+    }
+    .page .releases .cont:before {
+        height: 79px;
+        left: 0;
+        bottom: -90px;
+        background-size: cover;
+    }
+    .page .releases {
+        margin-bottom: 70px;
+    }
+
+    .music_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .music_items > * {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: calc(100%/2 - 20px);
+    }
+
+    .videos_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .videos_items > * {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: calc(100%/2 - 20px);
+    }
+
+    .about,
+    .music,
+    .videos,
+    .artist,
+    .card,
+    .service,
+    .news,
+    .contacts,
+    .post {
+        margin-top: 40px;
+    }
+    .music_item-img,
+    .videos_item-img {
+        margin-bottom: 10px;
+    }
+    .music_item-title,
+    .videos_item-title {
+        margin-bottom: 4px;
+    }
+    .pagination a.next {
+        margin-left: 10px;
+    }
+    .pagination a.prev {
+        margin-right: 10px;
+    }
+    .pagination a {
+        font-size: 11px;
+        line-height: 24px;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .pagination span {
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .music_item-text,
+    .videos_item-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .music_item-title,
+    .videos_item-title {
+        font-size: 18px;
+    }
+    .pagination {
+        margin-top: 40px;
+    }
+    .pagination a img {
+        width: 72%;
+    }
+
+
+    .artist_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card_item {
+        flex-direction: column;
+    }
+    .card_item-info {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .card_item-post {
+        margin-bottom: 15px;
+    }
+    .card_item-text {
+        margin-bottom: 20px;
+    }
+    .album_item {
+        padding: 20px;
+    }
+    .album_item-img {
+        margin-bottom: 14px;
+    }
+    .album_item-name {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+    .album,
+    .service,
+    .pagination,
+    .news-slider {
+        margin-bottom: 60px;
+    }
+
+    .card_item-name {
+        font-size: 20px;
+    }
+ 
+
+    .service_items {
+        margin-left: 0;
+        margin-bottom: -15px;
+    }
+    .service_items > * {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 0;
+        padding: 17px;
+    }
+    .service_item-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .service_item-text {
+        font-size: 15px;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+
+
+    .contacts_info {
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+    .contacts_info > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 22px;
+    }
+    .callback_form .columns {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .callback_form .columns > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .map_wrap {
+        height: 290px;
+    }
+
+    .news-slider_item-title {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 8px;
+    }
+
+    .post_item {
+        flex-direction: column;
+    }
+    .post .text_block img {
+        margin: 15px auto;
+        display: block;
+    }
+    .post_item-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .post .text_block p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .post .text_block img {
+        float: none;
+    }
+
+    .post-one .text_block img {
+        width: 420px;
+        height: 287px;
+        margin: 0 auto 25px;
+    }
+    .post .text_block p:last-child {
+        margin-top: 0;
+    }
+    .post .text_block p {
+        margin-top: 16px;
+    }
+
+    .block {
+        margin-bottom: 60px;
+    }
+
+
+    .about .about_description img.right { 
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .about .about_description img.left {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .about h2 {
+        margin-top: 24px;
+    }
+
+    
+
+   
+
+
+
+
+
+}

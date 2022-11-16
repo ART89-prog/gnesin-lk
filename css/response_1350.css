@@ -1,0 +1,96 @@
+@media print, (max-width: 1350px) {
+
+    header .menu .item {
+        margin-right: 23px;
+    }
+    .header_modal {
+        margin-left: 20px;
+    }
+    .news_right .news_item:nth-child(1) {
+        margin-bottom: 25px;
+    }
+    .news_left .news_item:nth-child(1) {
+        margin-bottom: 25px;
+    }
+    .news_left .news_item:nth-child(2) {
+        margin-right: 25px;
+        max-width: 240px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .news_left {
+        margin-right: 25px;
+    }
+    .news_left .news_item:nth-child(3) {
+        width: calc(100% - 265px);
+    }
+    .news_top .news_item:nth-child(1) {
+        padding: 25px;
+    }
+    .news_top {
+        margin-left: -25px;
+        margin-bottom: 25px;
+    }
+    .news_top > * {
+        width: calc(100%/2 - 25px);
+        margin-left: 25px;
+    }
+    .news_left .news_item:nth-child(2) .news_item-img img {
+        width: 100%;
+    }
+
+    .news_right .news_item:nth-child(2),
+    .news_left .news_item:nth-child(1) .news_item-info,
+    .news_left .news_item:nth-child(1) .news_item-info,
+    .news_top .news_item:nth-child(2) .news_item-info,
+    .news_top .news_item:nth-child(1),
+    .news_left .news_item:nth-child(2) .news_item-info,
+    .news_left .news_item:nth-child(3) .news_item-info,
+    .news_right .news_item:nth-child(1) .news_item-info {
+        padding: 25px;
+    }
+    .news_right .news_item:nth-child(2) {
+        font-size: 28px;
+        height: 100%;
+    }
+    .page .news_right .news_item:nth-child(2) {
+        height: 100%;
+    }
+    .news_left .news_item:nth-child(3) .news_item-img {
+        width: 100%;
+    }
+    .news_left .news_item:nth-child(3) .news_item-img img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .quote_photo {
+        width: 375px;
+        height: 352px;
+        bottom: -80px;
+    }
+    .quote {
+        padding: 80px 0;        
+    }
+    .advantages,
+    .quote,
+    .callback {
+        margin-bottom: 100px;
+    }
+    .quote_info-name::before {
+        right: -28px;
+        top: -75px;
+    }
+
+
+    .about_img {
+        width: 520px;
+        height: 356px;
+    }
+
+
+
+
+
+}
+

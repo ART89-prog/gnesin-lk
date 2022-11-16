@@ -1,0 +1,350 @@
+@media print, (max-width: 1023px) {
+ 
+    :root {
+        --font_size_title: 34px;
+    }
+
+    .news_top {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .news_top > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .news_top .news_item:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    .news_top .news_item:nth-child(2) .news_item-img img {
+        width: 100%;
+    }
+    .news_bottom {
+        flex-direction: column;
+    }
+    .news_left .news_item:nth-child(3) {
+        flex-direction: column;
+    }
+
+    .footer_items > * {
+        width: calc(100%/4 - 20px);
+        margin-left: 20px;
+    }
+    .footer_items {
+        margin-left: -20px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .footer_wrap {
+        flex-direction: column;
+    }
+    .footer_logo {
+        margin: 0 auto 30px;
+    }
+    .first-section_title {
+        font-size: 42px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+    .first-section_text {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 45px;
+    }
+    .first-section {
+        padding: 80px 0 80px;
+    }
+    .quote_photo {
+        width: 307px;
+        height: 300px;
+        bottom: -80px;
+    }
+    .quote_info {
+        max-width: 408px;
+        margin-left: 0;
+    }
+    .quote_info-text {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 25px;
+    }
+    .quote_info-name::before {
+        right: 12px;
+        top: 7px;
+        width: 116px;
+        height: 95px;
+        background-size: cover;
+    }
+    .quote_info-name {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .advantages_item_title {
+        font-size: 23px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+    .buttonUp button {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+    footer {
+        padding: 50px 0 20px;
+    }
+    .artists {
+        padding: 60px 0 60px;
+    }
+    .news_left {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .news_left .news_item:nth-child(1) .news_item-info {
+        width: 50%;
+    }
+    .news_left .news_item:nth-child(1) .news_item-img {
+        width: 50%;
+    }
+    .news_right {
+        width: 100%;
+        display: flex;
+    }
+    .news_right .news_item:nth-child(1) {
+        margin-bottom: 0;
+        width: calc(50% - 13px);
+        margin-right: 20px;
+    }
+    .news_right .news_item:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        line-height: 1.2;        
+        margin-top: 0;
+        width: calc(50% - 13px);
+        height: auto;
+    }
+    .page .news_right .news_item:nth-child(2) {
+        display: block;
+        width: calc(50% - 13px);
+        height: auto;
+    }
+    .news_top .news_item:nth-child(1) {
+        padding-bottom: 100px;
+    }
+    .artists, 
+    .releases {
+        padding: 40px 0 40px;
+    }
+    .releases_top,
+    .news_head,
+    .text_block h1 {
+        margin-bottom: 40px;
+    }
+    .callback_wrap {
+        padding: 60px 0 60px;
+    }
+    .artists .cont:before {
+        bottom: -120px;
+    }
+    .artists {
+        margin-bottom: 120px;
+    }
+
+
+    .about_description-box {
+        flex-direction: column;
+    }
+    .about_description-text.mb64 {
+        margin-bottom: 0px;
+    }
+    .about_description-box .about_img {
+        margin-left: 0px;
+        width: 100%;
+        height: auto;  
+        margin-top: 20px;  
+    }
+    .about_description-box.second .about_img {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }  
+    .about_quote {
+        padding: 60px 0px 60px;
+    }
+    .about h2 {
+        font-size: 24px;
+    }
+    .about p {
+        margin-bottom: 13px;
+    }
+    .about_description-box {
+        margin-bottom: 40px;
+    }
+
+
+    .releases_bottom {
+        margin-bottom: 24px;
+    }
+    .post .text_block h2 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    .page .releases .cont:before {
+        bottom: -120px;
+    }
+    .page .releases {
+        margin-bottom: 115px;
+    }
+    .about,
+    .music,
+    .videos,
+    .artist,
+    .card,
+    .service,
+    .news,
+    .contacts,
+    .post {
+        margin-top: 50px;
+    }
+
+
+    .artist_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .artist_items > * {
+        width: calc(100%/3 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card_title {
+        margin-bottom: 0px;
+    }
+    .album,
+    .service,
+    .pagination,
+    .news-slider {
+        margin-bottom: 80px;
+    }
+
+
+    .service_items > * {
+        width: calc(100%/2 - 25px);
+        padding: 25px;
+    }
+    .service_item-title {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+
+    .contacts_box {
+        flex-direction: column;
+    }
+    .contacts_info {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .contacts_info > * {
+        width: calc(100%/2 - 30px);
+        margin-left: 30px;
+    }
+    .map_wrap {
+        width: 100%;
+        height: 360px;
+    }
+    .callback_box {
+        flex-direction: column;
+    }
+    .callback_form {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .contacts_item-title {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    .contacts_item-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .contacts_item-text p br {
+        display: none;
+    }
+    .contacts_item-text p {
+        margin-bottom: 5px;
+    }
+
+    .news-slider_item-title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .post .text_block img {
+        width: 380px;
+        height: 482px;
+        margin-right: 25px;
+    }
+    .news_date {
+        margin-top: 32px;
+        margin-bottom: 14px;
+    }
+    .post-one .text_block img {
+        width: 380px;
+        height: 260px;
+    }
+    .post .text_block img {
+        margin-right: 24px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .post .text_block p:last-child {
+        margin-top: 24px;
+    }
+
+    .block {
+        margin-bottom: 80px;
+    }
+
+    .about .about_description img {
+        width: 400px;
+        height: 273px;
+    }
+    .about .about_description img.right { 
+        margin-left: 24px;
+        margin-bottom: 24px;
+    }
+    .about .about_description img.left {
+        margin-right: 24px;
+        margin-bottom: 24px;
+    }
+    .about p {
+        font-size: 16px;
+    }
+    .news_right {
+        flex-direction: row;
+    }
+
+    .news_right .news_item:nth-child(1) .news_item-img{
+        flex-shrink: 0;
+    }
+
+    .news_right .news_item:nth-child(1) .news_item-info{
+        height: 100%;
+    }
+
+    .news_right .news_item:nth-child(1){
+        height: auto;
+    }
+    
+
+    
+}
