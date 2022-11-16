@@ -15,11 +15,13 @@
     padding-right: 36px;
     padding-left: 48px;
     background: #FCFCFB;
+    position: fixed;
 }
 .main-content_block {
     width: calc(100% - 232px);
     padding: 40px 0px 120px 48px;
     background: #F2EEE9;
+    margin-left: auto;
 }
 .aside_photo {
     width: 68px;
@@ -502,7 +504,11 @@ tbody td.status.green {
 }
 
 
-
+@media print, (max-width: 1350px) {
+    .main-content_aside {
+        left: 0;
+    }
+}
 
 @media print, (max-width: 1023px) {
     .table-wrap {
@@ -518,7 +524,7 @@ tbody td.status.green {
         overflow: -moz-scrollbars-none; 
     }
     .main-content_block {
-        padding: 24px 0 24px 24px;
+        padding: 24px 0 24px 0px;
     }
     .main-content_item {
         padding: 24px;
