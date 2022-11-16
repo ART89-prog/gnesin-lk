@@ -205,7 +205,6 @@ button {
     position: relative;
 
     display: flex;
-    overflow: hidden;
     flex-direction: column;
 
     min-width: 360px;
@@ -1236,7 +1235,7 @@ footer .contact_callback-red {
 .footer_bottom::before {
     position: absolute;
     content: "";
-    width: calc(100% + 3000px);
+    width: calc(100% + 40px);
     height: 1px;
     background: rgba(198, 190, 179, 0.6);
     left: 50%;
