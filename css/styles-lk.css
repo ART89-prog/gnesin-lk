@@ -855,21 +855,161 @@ tbody td.status.green {
 }
 
 
-
+.steps_info {
+    display: flex;
+    margin-left: -48px;
+}
+.steps_info > * {
+    width: calc(100%/2 - 48px);
+    margin-left: 48px;
+}
+.steps_info-title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #55002B;
+    margin-bottom: 16px;
+}
+.steps_info-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2C3036;
+    margin-bottom: 32px;
+}
+.steps_info-text.df {
+    display: flex;
+    align-items: center;
+    color: #56595D;
+}
+.steps_info-text img {
+    margin-right: 11px;
+}
+.steps_info-booking-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2C3036;
+    margin-bottom: 24px;
+}
+.steps_info-box {
+    display: flex;
+    margin-left: -20px;
+    margin-bottom: 20px;
+}
+form .line.mb0 {
+    margin-bottom: 0;
+}
+.steps_info-box > * {
+    margin-left: 20px;
+    width: calc(100%/2 - 20px);
+}
+.steps_info-booking {
+    padding: 20px 24px 24px;
+    background: #FCFCFB;
+    border-radius: 8px;
+}
+.steps_info-amount-box {
+    display: flex;
+    align-items: center;   
+}
+.steps_info-amount-box .minus,
+.steps_info-amount-box .plus {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 0;
+    background: #C6BEB3;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.steps_info-amount-box .minus:hover,
+.steps_info-amount-box .plus:hover {
+    color: #fff;
+}
+.steps_info-amount-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #56595D;
+}
+.steps_info-amount-box input[type=number] {
+    width: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #56595D;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: none;
+}
+.steps_info-calculator {
+    padding: 20px 24px 24px;
+    background: #FCFCFB;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.steps_info-calculator-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2C3036;
+}
+.steps_info-calculator .price {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 20px;
+    color: #55002B;
+}
+.steps_info-amount-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.steps_info-amount-wrap.mb0 {
+    margin-bottom: 0;
+}
+.steps_info-subtitle {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #55002B;
+    margin-bottom: 16px;
+}
+.steps_info-text p {
+    margin-bottom: 15px;
+}
+.steps_info-text p:last-child {
+    margin-bottom: 0px;
+}
 .steps_bottom {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 48px;
 }
 .steps_bottom a {
-    padding: 12px 20px 14px;
+    padding: 12px 20px 12px;
     font-weight: 800;
     font-size: 14px;
     line-height: 14px;
     color: #FFFFFF;
     background: #55002B;
+    border: 2px solid transparent;
     border-radius: 8px;
     text-decoration: none;
+    height: 40px;
+    text-align: center;
 }
 .steps_bottom a:first-child {
     color: #56595D;
@@ -880,6 +1020,11 @@ tbody td.status.green {
 .steps_bottom a:first-child:hover {
     color: #FFFFFF;
     background: #55002B;
+}
+.steps_bottom a:last-child:hover {
+    color: #55002B;
+    background: #FFFFFF;
+    border: 2px solid #55002B;
 }
 
 
@@ -921,6 +1066,9 @@ tbody td.status.green {
     }
     .settings_item-head {
         margin-bottom: 24px;
+    }
+    .main-content_block {
+        padding: 40px 0px 120px 0px;
     }
 
     
@@ -1020,6 +1168,28 @@ tbody td.status.green {
     }
     .settings_item {
         margin-bottom: 24px;
+    }
+
+    .steps_info-box {
+        flex-direction: column;
+    }
+    .steps_info-amount {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .steps_info-booking {
+        width: 100%;
+    }
+    .steps_info-box {
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+    .steps_info-box > * {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .steps_bottom {
+        margin-top: 24px;
     }
 
 
@@ -1137,12 +1307,37 @@ tbody td.status.green {
     .steps_items {
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin-bottom: -20px;
+        margin-bottom: 20px;
     }
     .steps_items > * {
         width: calc(100%/4 - 20px);
         margin-right: 20px;
         margin-bottom: 20px;
+    }
+    .steps_info > * {
+        width: 100%;
+        margin-left: 0px;        
+    }
+    .steps_info {
+        margin-left: 0px;  
+        flex-wrap: wrap;  
+        flex-direction: column-reverse;    
+    }
+    .steps_info-booking {
+        max-width: 100%;
+    }
+    .steps_item-number {
+        font-size: 28px;
+        margin-bottom: 13px;
+    }
+    .steps_item-number span {
+        font-size: 12px;
+        margin-left: 3px;
+    }
+    .steps_item-text {
+        margin-top: 16px;
+        font-size: 10px;
+        height: 22px;
     }
 
 }
@@ -1196,4 +1391,33 @@ tbody td.status.green {
     .settingst_item-title {
         font-size: 18px;
     }
+    .steps_info-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .steps_info-text {
+        font-size: 14px;
+    }
+    .steps_info-text {
+        margin-bottom: 16px;
+    }
+    .steps_info-subtitle {
+        margin-bottom: 8px;
+    }
+    .steps_info-booking {
+        padding: 16px;
+    }
+    .steps_info-box form .line {
+        margin-bottom: 16px;
+    }
+    .steps_info-text p {
+        margin-bottom: 7px;
+    }
+    .main-content_block {
+        padding: 40px 0px 48px 0px;
+    }
+    .steps_info-calculator {
+        padding: 16px;
+    }
+
 }

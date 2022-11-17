@@ -117,16 +117,7 @@ $(() => {
     })
 
 
-    function updateCartPrice(context){
-      if( context ){
-        let price = parseInt(context.find('.price:not(.total)').data('price'))
-        let amount = parseInt(context.find('.amount .input').val())
-        let totalPrice = 15*amount
-    
-        context.find('.steps_info-calculator .price.total span').text( totalPrice )
-      }
-    
-    }
+  
 
     
        

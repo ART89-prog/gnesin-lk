@@ -71,10 +71,7 @@
         align-content: flex-start;
         flex-wrap: wrap;
     }
-    .main-content_block {
-        width: 100%;
-        padding: 40px 0px 120px 0px;
-    }
+
    
     .menu_open header .mob_menu_btn {
         display: none;
