@@ -527,8 +527,237 @@ tbody td.status.green {
 }
 
 
-@media print, (max-width: 1350px) {
+/* settings */
+.settings_item {    
+    padding: 40px 48px 48px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 48px;
+}
+.settings_item-box {
+    display: flex;
+    margin-bottom: 48px;
+}
+.settings_item-box-info {
+    padding: 48px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-right: 48px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.settings_item-box form {
+    max-width: 100%;
+    width: calc(100% - 348px);
+    padding: 40px 48px 48px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.settings_item form {
+    max-width: 100%;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.settings_item form .line .field input,
+.settings_item-box form .line .field input {
+    height: 44px;
+    background: #F7F5F2;
+    border-radius: 6px;
+    font-family: var(--font_family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #56595D;
+}
+.settings_item form .line,
+.settings_item-box form .line {
+    display: flex;
+    margin-left: -68px;
+}
+.settings_item form .line > *,
+.settings_item-box form .line > * {
+    width: calc(100%/2 - 68px);
+    margin-left: 68px;
+}
+.settings_item-box button {
+    width: 118px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-left: auto;
+    display: block;
+}
+.settings_item button {
+    width: 118px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-right: auto;
+    display: block;
+}
+.settings_item-head {
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+}
+.settingst_item-title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #55002B;
+}
+.settings_item-box form .line .field label,
+.settings_item form .line .field label {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2C3036;
+    margin-bottom: 16px;
+}
+.settings_item-photo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 48px;
+}
+.settings_item-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.settings_item-name {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2C3036;
+}
+.settings_item.mb0 {
+   margin-bottom: 0;
+}
+.settings_item-head .tabs {
+    margin-bottom: 0;
+    border-radius: 0;
+    background: none;
+}
+.settings_item-head .tabs button {
+    background: none;
+    color: #56595D;
+    padding: 0px;
+    margin: 0;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    margin-left: 28px;
+}
+.settings_item-head .tabs button.active {
+    background: none;
+    color: #55002B;
+}
+.modal.delete {
+    background: #F2EEE9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 15px 38px 54px;
+}
+.modal.delete form {
+    padding: 0px;
+}
+.modal.delete form button {
+    width: auto;
+}
+.delete_form-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #55002B;
+    margin-bottom: 44px;
+}
+.delete_form-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.delete_form-text img {
+    margin-right: 11px;
+}
+.delete_form-btns {
+    display: flex;
+    align-items: center;
+}
+.delete_form-btns button {
+    padding: 12px 20px 14px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: #55002B;
+    border-radius: 8px;
+}
+.delete_form-btns button:first-child {
+    color: #56595D;
+    background: #fff;
+    border: none;
+    margin-right: 14px;
+}
+.delete_form-btns button:first-child:hover {
+    color: #FFFFFF;
+    background: #55002B;
+}
 
+
+
+
+@media print, (max-width: 1350px) {
+    .settings_item-box-info {
+        width: 200px;
+    }
+    .settings_item-box form {
+        width: calc(100% - 248px);
+    }
+}
+
+
+@media print, (max-width: 1187px) {
+    .settings_item-box form {
+        padding: 24px;
+        width: calc(100% - 224px);
+    }
+    .settings_item {
+        padding: 24px;
+    }
+    .settings_item-box-info {
+        padding: 24px;
+        margin-right: 24px;
+    }
+    .settings_item-box {
+        margin-bottom: 24px;
+    }
+    .settings_item form .line, 
+    .settings_item-box form .line {
+        margin-left: -24px;
+    }
+    .settings_item form .line > *, 
+    .settings_item-box form .line > * {
+        width: calc(100%/2 - 24px);
+        margin-left: 24px;
+    }
+    .settings_item-head {
+        margin-bottom: 24px;
+    }
 }
 
 @media print, (max-width: 1023px) {
@@ -575,6 +804,61 @@ tbody td.status.green {
         width: calc(100%/3 - 24px);
         text-decoration: none;
     }
+    .settings_item form .line, 
+    .settings_item-box form .line {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .settings_item form .line > *, 
+    .settings_item-box form .line > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .settings_item-box form .line .field label, 
+    .settings_item form .line .field label {
+        margin-bottom: 8px;
+    }
+    .settings_item form .line, 
+    .settings_item-box form .line {
+        margin-bottom: 0;
+    }
+    .settings_item form .line .field, 
+    .settings_item-box form .line .field {
+        margin-bottom: 16px;
+    }
+    .settings_item-head .tabs button {
+        margin-left: 14px;
+        font-size: 14px;
+    }
+    .settings_item-box {
+        flex-direction: column;
+    }
+    .settings_item-box-info {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+    .settings_item-box form {
+        width: 100%;
+    }
+    .settings_item-box form .line .field label, 
+    .settings_item form .line .field label {
+        font-size: 14px;
+    }
+    .settings_item form .line .field input, 
+    .settings_item-box form .line .field input {
+        font-size: 14px;
+    }
+    .settings_item button {
+        font-size: 14px;
+    }
+    .settings_item {
+        margin-bottom: 24px;
+    }
+
+
+
+
 }
 
 
@@ -668,6 +952,18 @@ tbody td.status.green {
         width: calc(100%/2 - 24px);
         text-decoration: none;
     }
+    .settings_item-head {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .settings_item-head .tabs {
+        margin-top: 15px;
+    }
+    .settings_item-head .tabs button {
+        margin-left: 0;
+        margin-right: 14px;
+    }
 
 }
 
@@ -707,5 +1003,17 @@ tbody td.status.green {
     }
     .shipped-releases_item-title {
         font-size: 14px;
+    }
+    .modal.delete {
+        padding: 15px;
+    }
+    .delete_form-text {
+        margin-bottom: 50px;
+    }
+    .settings_item button {
+        width: 100%;
+    }
+    .settingst_item-title {
+        font-size: 18px;
     }
 }
