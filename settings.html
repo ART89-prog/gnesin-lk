@@ -175,6 +175,15 @@
 									<div class="settings_item-box-info">
 										<div class="settings_item-photo">
 											<img src="images/artists1.jpg" alt="">
+											<div class="settings_item-photo-links">
+												<a href="#" class="modal_link" data-content="#loading-photo">
+													<span>Загрузить фото</span>													
+												</a>
+												<a href="#" class="modal_link" data-content="#delete-photo">
+													<span>Удалить фото</span>
+												</a>
+											</div>
+
 										</div>
 										<div class="settings_item-name">Валерия Иванова</div>
 									</div>
@@ -560,10 +569,51 @@
 
 		<section class="modal delete" id="modal_delete">
 			<form class="delete_form">
-				<div class="delete_form-title">Удалить  аккаунт</div>
+				<div class="delete_form-box">
+					<div class="delete_form-title">Удалить  аккаунт</div>
+					<div class="delete_form-text">
+						<img src="images/warning.svg" alt="">
+						<span>Вы уверены, что хотите удалить аккаунт?</span> 
+					</div>	
+				</div>				
+				<div class="line">
+					<div class="delete_form-btns">
+						<button type="submit">Отмена</button>
+						<button type="submit">Удалить</button>
+					</div>					
+				</div>				
+			</form>
+		</section>
+
+
+		<section class="modal delete" id="loading-photo">
+			<form class="delete_form form">
+				<div class="delete_form-box">
+					<div class="delete_form-title">Загрузите  фотографию</div>
+					<div class="delete_form-text">
+						<img src="images/warning.svg" alt="">
+						<span>Вы можете загрузить изображение с расширением JPG или PNG, размером не менее 1500х1500, но не более 6000х6000 в формате JPG, PNG до 20 мб.</span> 
+					</div>	
+				</div>				
+				<div class="file file-uploader">
+					<div class="field file-chooser">
+						<input class="file-chooser__input" name="file[]" type="file" id="file">
+						<label for="file" class="file_btn">
+							<span>Прикрепить файл</span>
+						</label>												
+						<div class="selected list file-uploader__message-area"></div>
+					</div>
+				</div>				
+			</form>
+		</section>
+
+
+		<section class="modal delete" id="delete-photo">
+			<form class="delete_form">
+				<div class="delete_form-title">Удалить  фотографию</div>
 				<div class="delete_form-text">
 					<img src="images/warning.svg" alt="">
-					<span>Вы уверены, что хотите удалить аккаунт?</span> 
+					<span>Вы уверены, что хотите удалить безвозратно фотографию?</span> 
 				</div>
 				<div class="line">
 					<div class="delete_form-btns">
@@ -582,6 +632,7 @@
 		<script src="js/lozad.min.js"></script>
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/nice-select.js"></script>
+		<script src="js/file.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 		<script src="js/scripts-lk.js"></script>

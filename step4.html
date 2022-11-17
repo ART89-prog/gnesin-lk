@@ -185,14 +185,14 @@
 									<div class="steps_item-line"></div>
 									<div class="steps_item-text">Загрузить релиз</div>
 								</div>
-								<div class="steps_item">
+								<div class="steps_item active">
 									<div class="steps_item-number">
 										3<span>шаг</span>
 									</div>
 									<div class="steps_item-line"></div>
 									<div class="steps_item-text">Информация</div>
 								</div>
-								<div class="steps_item">
+								<div class="steps_item active">
 									<div class="steps_item-number">
 										4<span>шаг</span>
 									</div>
@@ -224,99 +224,95 @@
 
 							<div class="loading">
 								<form class="loading-form">
-									<div class="steps_info-title">Загрузить трек</div>
+									<div class="steps_info-title">Площадки и территории</div>
 									<div class="line">
 										<div class="field">
-											<label for="name1">Псевдоним артиста <span>*</span></label>
-											<input type="text" id="name1" placeholder="Valeria">
+											<label for="name9">Площадки <span>*</span></label>
+											<select id="name9">
+												<option value=""></option>
+												<option value=""></option>
+												<option value=""></option>
+												<option value=""></option>
+												<option value=""></option>
+											</select>
 										</div>
 										<div class="loading-form_text">
 											<img src="images/warning.svg" alt="">
-											<span>Укажите имя артиста (правильное написание на нужной раскладке, с учетом регистра, раскладки и всех символов).</span>
+											<span>Формат  загруаемого трека .wav, .flac</span>
 										</div>
 									</div>
 									<div class="line">
 										<div class="field">
-											<label for="name2">Приглашённый Артист</label>
+											<label for="name2">Название трека <span>*</span></label>
 											<input type="text" id="name2" placeholder="Name">
 										</div>
-										<div class="loading-form_text">
-											<img src="images/warning.svg" alt="">
-											<span>Если это фит, укажите название приглашённого Артиста. (правильное написание на нужной раскладке, с учетом регистра, раскладки и всех символов).</span>
-										</div>
 									</div>
 									<div class="line">
 										<div class="field">
-											<label for="name3">Название релиза <span>*</span></label>
+											<label for="name3">Автор музыки (ФИО) <span>*</span></label>
 											<input type="text" id="name3" placeholder="Name">
 										</div>
-										<div class="loading-form_text">
-											<img src="images/warning.svg" alt="">
-											<span>Перечислять названия треков с альбома не нужно.</span>
-										</div>
 									</div>
 									<div class="line">
 										<div class="field">
-											<label for="name4">Жанр <span>*</span></label>
+											<label for="name4">Автор слов (ФИО) <span>*</span></label>
 											<input type="text" id="name4" placeholder="Name">
 										</div>
-										<div class="loading-form_text">
-											<img src="images/warning.svg" alt="">
-											<span>Если это предполагается (acoustic / remaster / deluxe и тп).</span>
-										</div>
 									</div>
 									<div class="line">
 										<div class="field">
-											<label for="name5">Поджанр <span>*</span></label>
-											<input type="text" id="name5" placeholder="Name">
-										</div>
-									</div>
-									<div class="line">
-										<div class="field">
-											<label for="name6">Язык релиза <span>*</span></label>
-											<input type="text" id="name6" placeholder="Name">
-										</div>
-									</div>
-									<div class="line">
-										<div class="field">
-											<label for="name7">UPC-код релиза</label>
-											<input type="text" id="name7" placeholder="0000000000000">
+											<label for="name5">ISRC-код</label>
+											<textarea id="name5" placeholder="Введите текст трека..."></textarea>
 										</div>
 										<div class="loading-form_text">
 											<img src="images/warning.svg" alt="">
-											<span>Если у вас есть UPC-код релиза, укажите его (только для релизов, которые ранее уже были на витринах).</span>
+											<span>Все части трека должны быть отделены пустой строкой. Точки, запятые и прочие знаки в конце строки ставить не нужно. Запрещено использовать фигурные скобки и элементы программного кода.</span>
 										</div>
 									</div>
 									<div class="line">
 										<div class="field">
-											<label for="name8">Желаемая дата релиза <span>*</span></label>
-											<input type="text" id="name8" placeholder="00.00.0000">
+											<label for="name6">Версия трека</label>
+											<input type="checkbox" id="agree_check21" checked="">
+											<label for="agree_check21">Live</label>
+											<input type="checkbox" id="agree_check22">
+											<label for="agree_check22">Cover</label>
+											<input type="checkbox" id="agree_check23">
+											<label for="agree_check23">Remix</label>
+											<input type="checkbox" id="agree_check24">
+											<label for="agree_check24">Instrumental</label>
+										</div>
+										<div class="loading-form_text">
+											<img src="images/warning.svg" alt="">
+											<span>Если это предполагается.</span>
 										</div>
 									</div>
 									<div class="line">
 										<div class="field">
-											<label for="name9">Обложка релиза <span>*</span></label>
-											<div class="file file-uploader">
-												<div class="field file-chooser">
-													<input class="file-chooser__input" name="file[]" type="file" id="file">
-													<label for="file" class="file_btn">
-														<span>Прикрепить файл</span>
-													</label>												
-													<div class="selected list file-uploader__message-area"></div>
+											<label for="name7">Секунду запуска предпрослушивания трека</label>
+											<input type="text" id="name7" placeholder="00;00;00;00">
+										</div>
+									</div>
+									<div class="line">
+										<div class="field">
+											<label for="name8">Ненормативная лексика <span>*</span></label>
+											<div class="form_radio-box">
+												<div class="form_radio">
+													<input id="radio-1" type="radio" name="radio" value="1" checked="">
+													<label for="radio-1">Да</label>                    
 												</div>
+												<div class="form_radio">
+													<input id="radio-2" type="radio" name="radio" value="1">
+													<label for="radio-2">Нет</label>                    
+												</div>	
 											</div>
-										</div>
-										<div class="loading-form_text">
-											<img src="images/warning.svg" alt="">
-											<span>
-												<p>Формат обложки с расширением JPG или PNG, файл размером не менее 1500х1500, но не более 6000х6000.</p>
-												<p>На обложке нельзя использовать нецензурные надписи. Нецензурные жесты должны быть сильно размыты, заблюрены или закрыты. Из надписей допускаются только псевдонимы артистов и название релиза, на 100% совпадающие по языку и написанию с тем, как они указаны в релизе. Несоблюдение этих критериев может задержать выход релиза.</p>
-											</span>
+											
+											
 										</div>
 									</div>
+									
 									<div class="steps_bottom">								
-										<a href="step1.html">Назад</a>
-										<a href="step3.html">Следующий шаг</a>												
+										<a href="step3.html">Назад</a>
+										<a href="step5.html">Следующий шаг</a>												
 									</div>
 								</form>
 

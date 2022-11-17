@@ -629,6 +629,42 @@ tbody td.status.green {
     width: 120px;
     height: 120px;
     margin-bottom: 48px;
+    position: relative;
+    transition: all .4s;
+    cursor: pointer;
+}
+.settings_item-photo-links {
+    position: absolute;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px;
+    width: 168px;
+    height: 84px;
+    background: #F2EEE9;
+    border-radius: 6px;
+}
+.settings_item-photo:before {
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    background: transparent;
+    content: "";
+    bottom: -26px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.settings_item-photo-links a {
+    padding: 13px 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #56595D;
+}
+.settings_item-photo:hover .settings_item-photo-links {
+    display: block;
 }
 .settings_item-photo img {
     width: 100%;
@@ -666,17 +702,29 @@ tbody td.status.green {
     background: none;
     color: #55002B;
 }
+
+
 .modal.delete {
     background: #F2EEE9;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
     padding: 15px 38px 54px;
+    height: 300px;
 }
 .modal.delete form {
     padding: 0px;
 }
 .modal.delete form button {
     width: auto;
+}
+.delete_form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.modal.delete .line {
+    margin-top: auto;
+    margin-bottom: 0;
 }
 .delete_form-title {
     font-weight: 700;
@@ -689,7 +737,6 @@ tbody td.status.green {
 .delete_form-text {
     display: flex;
     align-items: center;
-    margin-bottom: 100px;
 }
 .delete_form-text img {
     margin-right: 11px;
@@ -869,6 +916,9 @@ tbody td.status.green {
     line-height: 20px;
     text-transform: uppercase;
     color: #55002B;
+    margin-bottom: 48px;
+}
+.steps_info-title.mb16 {
     margin-bottom: 16px;
 }
 .steps_info-text {
@@ -1046,6 +1096,7 @@ form .line.mb0 {
 .loading-form .line .field input {
     background: #F7F5F2;
     border-radius: 6px;
+    height: 44px;
 }
 .loading-form .line .field input[type=file] {
     display: none;
@@ -1058,6 +1109,12 @@ form .line.mb0 {
     font-size: 14px;
     line-height: 20px;
     color: #2C3036;
+}
+.loading-form_text p {
+    margin-bottom: 10px;
+}
+.loading-form_text p:last-child {
+    margin-bottom: 0px;
 }
 .loading-form_text img {
     margin-right: 11px;
@@ -1081,7 +1138,7 @@ form .line.mb0 {
     margin-right: 10px;
 }
 .loading-form .removal-button {
-    width: 177px;
+    width: 100%;
     height: 44px;
     border-radius: 6px;
     text-align: center;
@@ -1102,7 +1159,7 @@ form .line.mb0 {
     font-weight: 700;
     font-size: 16px;
     line-height: 44px;
-    color: #56595D;
+    color: #56595D !important;
 }
 .step2 .steps_bottom {
     width: calc(100%/2 - 25px);
@@ -1112,7 +1169,258 @@ form .line.mb0 {
 }
 
 
+.modal.delete input[type=file] {
+    display: none;
+}
+.modal.delete .loading-form_text {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2C3036;
+}
+.modal.delete .loading-form_text img {
+    margin-right: 11px;
+}
+.modal.delete .file-list {
+    list-style: none;
+}
+.modal.delete .file-uploader {
+    margin-top: auto;
+}
+.modal.delete .file-list li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.modal.delete .file-list li:last-child {
+    margin-bottom: 0;
+}
+.modal.delete .file-list svg {
+    width: 11px;
+    height: 22px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.modal.delete .removal-button {
+    width: 100%;
+    height: 44px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+.modal.delete .file_btn {
+    width: 100% !important;
+    height: 40px;
+    background: #55002B;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 16px;
+}
+.modal.delete .file_btn span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    color: #F2EEE9;
+}
+.loading form .line .field label {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2C3036;  
+    margin-bottom: 16px; 
+}
+.loading form .line .field label span {
+    color: #E20000;
+    margin-left: 5px;
+}
 
+.loading-form input[type=checkbox] {
+    display: none;
+}
+.loading-form input[type=checkbox]+label {
+    font-family: var(--font_family);
+    font-weight: 700;
+    font-size:  var(--font_size);
+    line-height: 16px;
+    color: var(--text_color2);
+    position: relative;
+    display: table-cell;
+    padding-left: 30px;
+    cursor: pointer;
+    text-align: left;
+    vertical-align: middle;
+}
+.loading-form .line .field label {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: var(--font_size);
+    line-height: 16px;
+    color: var(--text_color2);
+    margin-bottom: 8px;
+}
+.loading-form input[type=checkbox]+label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    transition: .2s linear;
+    background: #C6BEB3;
+    border-radius: 4px;
+}
+.loading-form input[type=checkbox]+label:after {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 11px;
+    height: 6px;
+    content: '';
+    transition: opacity .2s linear;
+    transform: rotate(-45deg);
+    opacity: 0;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.loading-form input[type=checkbox]:checked+label:before {
+    background: var(--bg2);
+}
+.loading-form input[type=checkbox]:checked+label:after {
+    opacity: 1;
+}
+.loading-form textarea {
+    resize: none;
+    background: #F7F5F2;
+    border: 1px solid #F7F5F2;
+    border-radius: 5px; 
+    height: 80px;
+    padding: 9px 14px;
+    font-family: var(--font_family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #56595D;
+}
+.form_radio label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #56595D;
+    padding-bottom: 16px;
+    background: #F1F1F1;
+}
+.form_radio:first-child {
+    margin-right: 14px;
+}
+.form_radio input[type=radio] {
+    display: none;
+}
+.loading-form .line .field .form_radio label {
+    cursor: pointer;
+    position: relative;
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;  
+    background: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #56595D;
+}
+.form_radio-box {
+    display: flex;
+}
+form input[type=radio] + label:before {
+    border: 1px solid #000000;
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    border: none;
+    content:"";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100%);
+    background: #D4D4D4;  
+}
+form input[type=radio]:checked + label:before{
+    background: #55002B;
+}
+
+.payment {
+    background: #FCFCFB;
+    border-radius: 8px;
+    padding: 40px 48px 48px;   
+}
+.payment_box {
+    max-width: 513px;
+    width: 100%;
+}
+.payment_text {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2C3036; 
+}
+.payment .table-wrap {
+    margin-top: 16px;
+    margin-bottom: 34px;
+}
+.payment thead th,
+.payment tbody td {
+    width: 25%;
+}
+.payment thead th {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #56595D;   
+    text-align: center;
+    padding: 13px 11px;
+    background: #F2EEE9;
+}
+.payment tbody td {
+    background: #F7F5F2;
+    padding: 16px 11px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #56595D;
+    text-align: center;
+}
+.payment thead th:first-child {
+    text-align: start;
+}
+.payment thead th:last-child {
+    text-align: end;
+}
+.payment tbody td:first-child {
+    text-align: start;
+}
+.payment tbody td:last-child {
+    text-align: end;
+}
+.payment_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.payment_total {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 20px;
+    color: #55002B;       
+}
 
 
 
@@ -1278,6 +1586,34 @@ form .line.mb0 {
         margin-top: 24px;
     }
 
+    .loading {
+        padding: 24px;
+    }
+    .loading-form .line {
+        margin-left: 0px;
+    }
+    .loading-form .line > * {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .loading-form .line {
+        flex-direction: column;
+    }
+    .loading-form_text {
+        margin-top: 16px;
+    }
+    .loading-form .file-list li {
+        flex-wrap: nowrap;
+    }
+    .loading-form .removal-button {
+        margin-left: 10px;
+    }
+    .payment {
+        padding: 24px;
+    }
+
+
+
 
 
 
@@ -1425,6 +1761,15 @@ form .line.mb0 {
         font-size: 10px;
         height: 22px;
     }
+    .loading {
+        padding: 16px;
+    } 
+    .step2 .steps_bottom {
+        width: 100%;
+    }
+    .loading form .line .field label {
+        margin-bottom: 8px;
+    }
 
 }
 
@@ -1466,7 +1811,7 @@ form .line.mb0 {
         font-size: 14px;
     }
     .modal.delete {
-        padding: 15px;
+        padding: 20px;
     }
     .delete_form-text {
         margin-bottom: 50px;
@@ -1479,7 +1824,7 @@ form .line.mb0 {
     }
     .steps_info-title {
         font-size: 18px;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
     }
     .steps_info-text {
         font-size: 14px;
@@ -1503,6 +1848,9 @@ form .line.mb0 {
         padding: 40px 0px 48px 0px;
     }
     .steps_info-calculator {
+        padding: 16px;
+    }
+    .payment {
         padding: 16px;
     }
 
