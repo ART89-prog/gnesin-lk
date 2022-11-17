@@ -18,6 +18,24 @@ $(() => {
         $('.overlay').fadeOut(300)
     })
 
+      // Моб. меню
+      $('.lk header .mob_menu_btn').click((e) => {
+        e.preventDefault()
+
+        $('.lk header .mob_menu_btn').addClass('active')
+        $('body').addClass('menu_open')
+        $('.main-content_aside').addClass('show')
+        $('.overlay').fadeIn(300)
+    })
+
+    $('.lk header .close_btn, .overlay').click((e) => { 
+
+        $('.lk header .mob_menu_btn').removeClass('active')
+        $('body').removeClass('menu_open')
+        $('.main-content_aside').removeClass('show')
+        $('.overlay').fadeOut(300)
+    })
+
 
 
     $('.releases_items').slick({

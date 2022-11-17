@@ -35,6 +35,42 @@
     header .menu.show {        
         transform: translateX(100%);
     }
+
+    .main-content_aside-wrap {
+        width: 100%;
+    }
+    .aside_btn {
+        width: 200px;
+    }
+    .main-content_aside.show {        
+        transform: translateX(100%);
+    }
+    .main-content_aside {
+        position: fixed;
+        z-index: 107;
+        top: 100px;
+        right: 100%;
+
+        display: flex;
+        overflow: auto;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 15px 20px;
+
+        /*transition: transform .3s linear;      */ 
+
+        background: #fff;
+
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
    
     .menu_open header .mob_menu_btn {
         display: none;

@@ -310,8 +310,8 @@ button {
 ------------*/
 header {
     z-index: 103;
-    padding-top: 8px;
-    padding-bottom: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background: #FCFCFB;
     width: 100%;
     height: 88px;
