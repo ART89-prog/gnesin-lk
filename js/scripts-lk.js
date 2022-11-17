@@ -116,8 +116,20 @@ $(() => {
       }, 10)
     })
 
+      $('body').on('change', '.form input[type=file]', function (e) {
+        $(this).closest('.file').find('label').text($(this).val())
+      })
 
-  
+
+    	// Удаление файла
+      $('form .file .selected .remove').click(function (e) {
+        e.preventDefault()
+
+        let parent = $(this).closest('.file')
+
+        $(this).closest('div').remove()
+        parent.find('input[type=file]').val('')
+      })
 
     
        
