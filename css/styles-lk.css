@@ -218,7 +218,10 @@ tbody td.status.red {
 tbody td.status.green {
     background: rgba(0, 166, 106, 0.6);
 }
-
+tbody td.status.gray {
+    background: #F2EEE9;
+    color: #56595D;
+}
 .main-content_item .releases_item-title {
     font-weight: 800;
     font-size: var(--font_size);
@@ -227,7 +230,6 @@ tbody td.status.green {
     color: var(--text_color);
     margin-bottom: 0;  
 }
-
 
 .main-content_item .nice-select:after {
     display: none;
@@ -1066,6 +1068,7 @@ form .line.mb0 {
     background: #fff;
     border: none;
     margin-right: 14px;
+    border: 1px solid #C6BEB3;
 }
 .steps_bottom a:first-child:hover {
     color: #FFFFFF;
@@ -1422,6 +1425,61 @@ form input[type=radio]:checked + label:before{
     color: #55002B;       
 }
 
+.payment_subtitle {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #55002B;
+    margin-bottom: 16px;   
+}
+.payment_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2C3036;
+}
+.payment_text p {
+    margin-bottom: 15px;
+}
+.payment_text p:last-child {
+    margin-bottom: 0px;
+}
+
+.order-history .main-content_item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 44px 48px 29px;
+}
+.order-history .main-content_item thead th:nth-child(1) {
+    width: 55%;
+}  
+.order-history .main-content_item thead th:nth-child(2) {
+    width: 15%;
+}  
+.order-history .main-content_item thead th:nth-child(3) {
+    width: 15%;
+}  
+.order-history .main-content_item thead th:nth-child(4) {
+    width: 163px;
+    text-align: center;
+}  
+.order-history .main-content_item tbody td:nth-child(1) {
+    width: 55%;
+}  
+.order-history .main-content_item tbody td:nth-child(2) {
+    width: 15%;
+}  
+.order-history .main-content_item tbody td:nth-child(3) {
+    width: 15%;
+}  
+.order-history .main-content_item tbody td:nth-child(4) {
+    width: 163px;
+    margin-bottom: 19px;
+} 
+.order-history .main-content_item table {
+    width: 100%;
+}
 
 
 @media print, (max-width: 1350px) {
@@ -1771,6 +1829,7 @@ form input[type=radio]:checked + label:before{
         margin-bottom: 8px;
     }
 
+
 }
 
 
@@ -1853,5 +1912,29 @@ form input[type=radio]:checked + label:before{
     .payment {
         padding: 16px;
     }
+    .payment_subtitle {
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 12px;
+    }
+    .payment_text p {
+        margin-bottom: 10px;
+    }
+    .payment_text {
+        font-size: 13px;
+        line-height: 14px;
+    }
+    .steps_bottom.fdc {
+        flex-direction: column;
+    }
+    .steps_bottom.fdc a:first-child {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .steps_bottom.fdc a {
+        width: 100%;
+    }
+
+
 
 }
