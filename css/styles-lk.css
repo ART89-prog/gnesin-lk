@@ -719,6 +719,170 @@ tbody td.status.green {
 }
 
 
+.steps_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: -20px;
+    margin-bottom: 60px;
+}
+.steps_items > * {
+    width: calc(100%/7 - 20px);
+    margin-right: 20px;
+}
+.steps_item-number {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #C6BEB3; 
+    margin-bottom: 22px;
+}
+.steps_item-number span {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 14px;
+    color: #C6BEB3;
+    margin-left: 4px;
+}
+.steps_item-line {
+    width: 100%;
+    height: 1px;
+    background: #C6BEB3;
+    position: relative;
+    margin-left: 20px;
+}
+.steps_item.mr40 {
+    margin-right: 40px;
+}
+.steps_item-line:before {
+    border: 1px solid #C6BEB3;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.steps_item-line:after {
+    width: 10px;
+    height: 10px;
+    background: #C6BEB3;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.steps_item-text {
+    margin-top: 22px;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 12px;
+    color: #C6BEB3;
+    height: 28px;
+}
+.steps_item.active .steps_item-number,
+.steps_item.active .steps_item-number span {
+    color: #55002B;
+}
+.steps_item.active .steps_item-line:after {
+    background: #55002B;
+}
+.steps_item.active .steps_item-text {
+    color: #1A1A18;
+}
+
+.steps_info-booking input[type=checkbox] {
+    display: none;
+}
+.steps_info-booking input[type=checkbox]+label {
+    font-family: var(--font_family);
+    font-weight: 700;
+    font-size:  var(--font_size);
+    line-height: 16px;
+    color: var(--text_color2);
+    position: relative;
+    display: table-cell;
+    padding-left: 30px;
+    cursor: pointer;
+    text-align: left;
+    vertical-align: middle;
+}
+.steps_info-booking .line .field label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: var(--font_size);
+    line-height: 16px;
+    color: var(--text_color2);
+    margin-bottom: 8px;
+}
+.steps_info-booking input[type=checkbox]+label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    transition: .2s linear;
+    background: #C6BEB3;
+    border-radius: 4px;
+}
+.steps_info-booking input[type=checkbox]+label:after {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 11px;
+    height: 6px;
+    content: '';
+    transition: opacity .2s linear;
+    transform: rotate(-45deg);
+    opacity: 0;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.steps_info-booking input[type=checkbox]:checked+label:before {
+    background: var(--bg2);
+}
+.steps_info-booking input[type=checkbox]:checked+label:after {
+    opacity: 1;
+}
+
+
+
+.steps_bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+}
+.steps_bottom a {
+    padding: 12px 20px 14px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: #55002B;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.steps_bottom a:first-child {
+    color: #56595D;
+    background: #fff;
+    border: none;
+    margin-right: 14px;
+}
+.steps_bottom a:first-child:hover {
+    color: #FFFFFF;
+    background: #55002B;
+}
+
+
 
 
 @media print, (max-width: 1350px) {
@@ -872,6 +1036,9 @@ tbody td.status.green {
         width: 100%;
         padding: 24px 0;
     }
+    .main-content_item {
+        margin-bottom: 24px;
+    }
     .main-content_item table tbody td img {
         margin-right: 0;
     }
@@ -965,6 +1132,17 @@ tbody td.status.green {
     .settings_item-head .tabs button {
         margin-left: 0;
         margin-right: 14px;
+    }
+
+    .steps_items {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: -20px;
+    }
+    .steps_items > * {
+        width: calc(100%/4 - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 
 }
