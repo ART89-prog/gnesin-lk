@@ -1430,7 +1430,7 @@ footer .contact_callback-red {
     border-radius: 5px;
 }
 .modal form input[type=checkbox].error+label:before {
-    border-color: red;
+    border-color: #E20000;
 }
 .modal form input[type=checkbox]+label:after {
     position: absolute;

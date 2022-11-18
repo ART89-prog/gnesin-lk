@@ -30,7 +30,9 @@
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/slick-theme.css">
-		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/nice-select.css">		
+		<!-- <link rel="stylesheet" href="css/select2.min.css"> -->
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/styles-lk.css">
 
@@ -227,90 +229,334 @@
 									<div class="steps_info-title">Площадки и территории</div>
 									<div class="line">
 										<div class="field">
-											<label for="name9">Площадки <span>*</span></label>
-											<select id="name9">
-												<option value=""></option>
-												<option value=""></option>
-												<option value=""></option>
-												<option value=""></option>
-												<option value=""></option>
+											<label for="name98">Площадки <span>*</span></label>
+											<select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+												<option value="">Apple Music</option>
+												<option value="">Amazon</option>
+												<option value="">Amazon Video</option>
+												<option value="">Anghami</option>
+												<option value="">AudibleMagic</option>
+												<option value="">BASE_NDA</option>
+												<option value="">Beatport</option>
+												<option value="">Beeline Music UZ</option>
+												<option value="">BoomPlay</option>
+												<option value="">ClicknClear</option>
+												<option value="">Deezer</option>
+												<option value="">FonMix</option>
+												<option value="">hitter</option>
+												<option value="">iHeart</option>
+												<option value="">Jaxsta</option>
+												<option value="">JioSaavn</option>
+												<option value="">Kanjian</option>
+												<option value="">ККВОХ</option>
+												<option value="">Lifecell</option>
+												<option value="">LINE</option>
+												<option value="">Lyrics Find</option>
+												<option value="">Mixcloud</option>
+												<option value="">MobiMusic (Казахстан)</option>
+												<option value="">MonkingMe</option>
+												<option value="">MusixMatch</option>
+												<option value="">Netease</option>
+												<option value="">Pandora</option>
+												<option value="">Presto</option>
+												<option value="">Pretzel</option>
+												<option value="">Qishui Yinyue</option>
+												<option value="">Resso</option>
+												<option value="">Snazam</option>
+												<option value="">Smule</option>
+												<option value="">SoundCloud</option>
+												<option value="">SoundExchange</option>
+												<option value="">Spotify</option>
+												<option value="">Tencent</option>
+												<option value="">TIDAL</option>
+												<option value="">TIDAL Video</option>
+												<option value="">TikTok</option>
+												<option value="">Tracklib</option>
+												<option value="">Triller</option>
+												<option value="">VevoVideo </option>
+												<option value="">VK Музыка</option>
+												<option value="">Xplore Music</option>
+												<option value="">YouTube Copyright</option>
+												<option value="">YouTube Music</option>
+												<option value="">YouTube (Sound Recording)</option>
+												<option value="">Аудиоклуб</option>
+												<option value="">Билайн, Теле2 (РБТ)</option>
+												<option value="">ВКонтакто Видео</option>
+												<option value="">Звук</option>
+												<option value="">Иная дистрибуция</option>
+												<option value="">КиевСтар(РБТ)</option>
+												<option value="">Мегафон (РБТ)</option>
+												<option value="">Мотив, Moldcell (PБТ)</option>
+												<option value="">МТС Беларусь (музыкальный портал)</option>
+												<option value="">MTC (РБТ)</option>
+												<option value="">Музыка Билайн</option>
+												<option value="">РБТ-Партнёрка</option>
+												<option value="">ЯндексВидео</option>
+												<option value="">Яндекс Музыка</option>
 											</select>
 										</div>
 										<div class="loading-form_text">
 											<img src="images/warning.svg" alt="">
-											<span>Формат  загруаемого трека .wav, .flac</span>
+											<span>Укажите основные площадки распространения для релиза.</span>
 										</div>
 									</div>
 									<div class="line">
 										<div class="field">
-											<label for="name2">Название трека <span>*</span></label>
-											<input type="text" id="name2" placeholder="Name">
-										</div>
-									</div>
-									<div class="line">
-										<div class="field">
-											<label for="name3">Автор музыки (ФИО) <span>*</span></label>
-											<input type="text" id="name3" placeholder="Name">
-										</div>
-									</div>
-									<div class="line">
-										<div class="field">
-											<label for="name4">Автор слов (ФИО) <span>*</span></label>
-											<input type="text" id="name4" placeholder="Name">
-										</div>
-									</div>
-									<div class="line">
-										<div class="field">
-											<label for="name5">ISRC-код</label>
-											<textarea id="name5" placeholder="Введите текст трека..."></textarea>
+											<label for="name98">Территории <span>*</span></label>
+											<select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+												<option value="">Россия</option>
+												<option value="">Азербайджан</option>
+												<option value="">Армения</option>
+												<option value="">Белоруссия</option>
+												<option value="">Грузия</option>
+												<option value="">Казахстан</option>
+												<option value="">Киргизия</option>
+												<option value="">Молдавия</option>
+												<option value="">Таджикистан </option>
+												<option value="">Туркмения</option>
+												<option value="">Узбекистан</option>
+												<option value="">Украина</option>
+												<option value="">Эстония</option>
+												<option value="">Латвия</option>
+												<option value="">Литва</option>
+												<option value="">Австралия</option>
+												<option value="">Австрия</option>
+												<option value="">Аландские острова</option>
+												<option value="">Албания</option>
+												<option value="">Алжир</option>
+												<option value="">Американские Виргинские острова</option>
+												<option value="">Американское Самоа</option>
+												<option value="">Ангилья</option>
+												<option value="">Ангола</option>
+												<option value="">Андорра</option>
+												<option value="">Антарктида</option>
+												<option value="">Антигуа и Барбуда</option>
+												<option value="">Аргентина</option>
+												<option value="">Аруба</option>
+												<option value="">Афганистан</option>
+												<option value="">Багамы</option>
+												<option value="">Бангладеш</option>
+												<option value="">Барбадос</option>
+												<option value="">Бахрейн</option>
+												<option value="">Белиз</option>
+												<option value="">Бельгия</option>
+												<option value="">Бенин</option>
+												<option value="">Бермуды</option>
+												<option value="">Болгария</option>
+												<option value="">Боливия</option>
+												<option value="">Босния и Герцеговина</option>
+												<option value="">Ботсвана</option>
+												<option value="">Бразилия</option>
+												<option value="">Британская территория в Индийском океане</option>
+												<option value="">Британские Виргинские острова</option>
+												<option value="">Бруней</option>
+												<option value="">Буркина Фасо</option>
+												<option value="">Бурунди</option>
+												<option value="">Бутан</option>
+												<option value="">Вануату</option>
+												<option value="">Ватикан</option>
+												<option value="">Великобритания</option>
+												<option value="">Венгрия</option>
+												<option value="">Венесуэла</option>
+												<option value="">Внешние малые острова (США)</option> 
+												<option value="">Восточный Тимор</option> 
+												<option value="">Вьетнам</option> 
+												<option value="">Габон</option> 
+												<option value="">Гаити</option> 
+												<option value="">Гайана</option>
+												<option value="">Гамбия</option>
+												<option value="">Гана</option> 
+												<option value="">Гваделупа</option> 
+												<option value="">Гватемала</option> 
+												<option value="">Гвинея</option> 
+												<option value="">Гвинея-Бисау</option> 
+												<option value="">Германия</option> 
+												<option value="">Гернси</option> 
+												<option value="">Гибралтар</option>
+												<option value="">Гондурас</option> 
+												<option value="">Гонконг</option> 
+												<option value="">Гренада</option> 
+												<option value="">Гренландия</option> 
+												<option value="">Греция</option> 
+												<option value="">Гуам</option> 
+												<option value="">Дания</option> 
+												<option value="">Джерси</option> 
+												<option value="">Джибути</option> 
+												<option value="">Доминика</option> 
+												<option value="">Доминиканская Республика</option> 
+												<option value="">ДР Конго</option> 
+												<option value="">Египет</option> 
+												<option value="">Замбия</option> 
+												<option value="">Западная Сахара</option> 
+												<option value="">Зимбабве</option> 
+												<option value="">Израиль</option> 
+												<option value="">Индия</option> 
+												<option value="">Индонезия</option> 
+												<option value="">Иордания</option> 
+												<option value="">Ирак</option> 
+												<option value="">Иран</option> 
+												<option value="">Ирландия</option> 
+												<option value="">Исландия</option> 
+												<option value="">Испания</option> 
+												<option value="">Италия</option> 
+												<option value="">Йемен</option> 
+												<option value="">Кабо-Верде</option> 
+												<option value="">Каймановы острова</option> 
+												<option value="">Камбоджа</option> 
+												<option value="">Камерун</option> 
+												<option value="">Канада</option> 
+												<option value="">Катар</option> 
+												<option value="">Кения</option> 
+												<option value="">Кипр</option>
+												<option value="">Кирибати</option> 
+												<option value="">Китайская Республика</option> 
+												<option value="">КНДР</option> 
+												<option value="">KHP</option> 
+												<option value="">Кокосовые острова</option> 
+												<option value="">Колумбия</option> 
+												<option value="">Коморы</option> 
+												<option value="">Коста-Рика</option> 
+												<option value="">Кот-д'Ивуар</option> 
+												<option value="">Куба</option> 
+												<option value="">Кувейт</option> 
+												<option value="">Лаос</option> 
+												<option value="">Лесото</option> 
+												<option value="">Либерия</option> 
+												<option value="">Ливан</option> 
+												<option value="">Ливия</option> 
+												<option value="">Лихтенштейн</option> 
+												<option value="">Люксембург</option> 
+												<option value="">Маврикий</option> 
+												<option value="">Мавритания</option> 
+												<option value="">Мадагаскар</option> 
+												<option value="">Майотта</option>
+												<option value="">Макао</option> 
+												<option value="">Македония</option> 
+												<option value="">Малави</option> 
+												<option value="">Малайзия</option> 
+												<option value="">Мали</option> 
+												<option value="">Мальдивы</option> 
+												<option value="">Мальта</option> 
+												<option value="">Марокко</option> 
+												<option value="">Мартиника</option> 
+												<option value="">Маршалловы Острова</option> 
+												<option value="">Мексика</option> 
+												<option value="">Микронезия</option> 
+												<option value="">Мозамбик</option> 
+												<option value="">Монако</option>
+												<option value="">Монголия</option> 
+												<option value="">Монтсеррат</option> 
+												<option value="">Мьянма</option> 
+												<option value="">Намибия</option> 
+												<option value="">Haypy</option> 
+												<option value="">Непал</option> 
+												<option value="">Нигер</option> 
+												<option value="">Нигерия</option>
+												<option value="">Нидерландские Антильские острова</option> 
+												<option value="">Нидерланды</option> 
+												<option value="">Никарагуа</option> 
+												<option value="">Ниуэ</option> 
+												<option value="">Новая Зеландия</option> 
+												<option value="">Новая Каледония</option>
+												<option value="">Норвегия</option>
+												<option value="">ОАЭ</option> 
+												<option value="">Оман</option> 
+												<option value="">Острова Кука</option> 
+												<option value="">Острова Питкэрн</option>
+												<option value="">Остров Буве</option> 
+												<option value="">Остров Мэн</option> 
+												<option value="">Остров Норфолк</option> 
+												<option value="">Остров Рождества</option> 
+												<option value="">Остров Святой Елены</option> 
+												<option value="">Пакистан</option> 
+												<option value="">Палау</option> 
+												<option value="">Палестина</option> 
+												<option value="">Панама</option> 
+												<option value="">Папуа - Новая Гвинея</option> 
+												<option value="">Парагвай</option> 
+												<option value="">Перу</option> 
+												<option value="">Польша</option> 
+												<option value="">Португалия</option> 
+												<option value="">Пуэрто-Рико</option> 
+												<option value="">Республика Конго</option> 
+												<option value="">Республика Корея</option>
+												<option value="">Реюньон</option> 
+												<option value="">Руанда</option> 
+												<option value="">Румыния</option> 
+												<option value="">Сальвадор</option> 
+												<option value="">Самоа</option> 
+												<option value="">Сан-Марино</option> 
+												<option value="">Сан-Томе и Принсипи</option> 
+												<option value="">Саудовская Аравия</option> 
+												<option value="">Свазиленд</option>
+												<option value="">Северные Марианские острова</option> 
+												<option value="">Сейшельские Острова</option> 
+												<option value="">Сенегал</option> 
+												<option value="">Сен-Пьер и Микелон 
+												<option value="">Сент-Винсент и Гренадины</option> 
+												<option value="">Сент-Китс Невис</option> 
+												<option value="">Сент-Люсия</option> 
+												<option value="">Сербия</option> 
+												<option value="">Сингапур</option> 
+												<option value="">Сирия</option> 
+												<option value="">Словакия</option> 
+												<option value="">Словения</option> 
+												<option value="">Соломоновы Острова</option> 
+												<option value="">Сомали</option> 
+												<option value="">Судан</option>
+												<option value="">Суринам</option> 
+												<option value="">США</option> 
+												<option value="">Сьерра-Леоне</option> 
+												<option value="">Таиланд</option>
+												<option value="">Танзания</option>
+												<option value="">Тёркс и Кайкос</option>
+												<option value="">Того</option> 
+												<option value="">Токелау</option> 
+												<option value="">Тонга</option> 
+												<option value="">Тринидад и Тобаго</option> 
+												<option value="">Тувалу</option>
+												<option value="">Тунис</option> 
+												<option value="">Турция</option> 
+												<option value="">Уганда</option> 
+												<option value="">Уоллис и Футуна</option> 
+												<option value="">Уругвай</option> 
+												<option value="">Фарерские острова</option> 
+												<option value="">Фиджи</option> 
+												<option value="">Филиппины</option> 
+												<option value="">Финляндия</option> 
+												<option value="">Фолклендские острова</option> 
+												<option value="">Франция</option> 
+												<option value="">Французская Гвиана</option> 
+												<option value="">Французская Полинезия</option>
+												<option value="">Французские Южные и Антарктические Территории</option> 
+												<option value="">Херд и Макдональд</option> 
+												<option value="">Хорватия</option> 
+												<option value="">ЦАР</option> 
+												<option value="">Чад</option> 
+												<option value="">Черногория</option> 
+												<option value="">Чехия</option> 
+												<option value="">Чили</option> 
+												<option value="">Швейцария</option> 
+												<option value="">Швеция</option> 
+												<option value="">Шпицберген и Ян-Майен</option> 
+												<option value="">Шри-Ланка</option> 
+												<option value="">Эквадор</option>
+												<option value="">Экваториальная Гвинея</option> 
+												<option value="">Эритрея</option> 
+												<option value="">Эфиопия</option> 
+												<option value="">ЮАР</option>
+												<option value="">Южная Георгия и Южные Сандвичевы острова</option>
+												<option value="">Ямайка</option> 
+												<option value="">Япония</option>
+											</select>
 										</div>
 										<div class="loading-form_text">
 											<img src="images/warning.svg" alt="">
-											<span>Все части трека должны быть отделены пустой строкой. Точки, запятые и прочие знаки в конце строки ставить не нужно. Запрещено использовать фигурные скобки и элементы программного кода.</span>
+											<span>Укажите основные площадки распространения для релиза.</span>
 										</div>
-									</div>
-									<div class="line">
-										<div class="field">
-											<label for="name6">Версия трека</label>
-											<input type="checkbox" id="agree_check21" checked="">
-											<label for="agree_check21">Live</label>
-											<input type="checkbox" id="agree_check22">
-											<label for="agree_check22">Cover</label>
-											<input type="checkbox" id="agree_check23">
-											<label for="agree_check23">Remix</label>
-											<input type="checkbox" id="agree_check24">
-											<label for="agree_check24">Instrumental</label>
-										</div>
-										<div class="loading-form_text">
-											<img src="images/warning.svg" alt="">
-											<span>Если это предполагается.</span>
-										</div>
-									</div>
-									<div class="line">
-										<div class="field">
-											<label for="name7">Секунду запуска предпрослушивания трека</label>
-											<input type="text" id="name7" placeholder="00;00;00;00">
-										</div>
-									</div>
-									<div class="line">
-										<div class="field">
-											<label for="name8">Ненормативная лексика <span>*</span></label>
-											<div class="form_radio-box">
-												<div class="form_radio">
-													<input id="radio-1" type="radio" name="radio" value="1" checked="">
-													<label for="radio-1">Да</label>                    
-												</div>
-												<div class="form_radio">
-													<input id="radio-2" type="radio" name="radio" value="1">
-													<label for="radio-2">Нет</label>                    
-												</div>	
-											</div>
-											
-											
-										</div>
-									</div>
+									</div>								
 									
-									<div class="steps_bottom">								
+									<div class="steps_bottom mt48">								
 										<a href="step3.html">Назад</a>
 										<a href="step5.html">Следующий шаг</a>												
 									</div>
@@ -508,6 +754,7 @@
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/nice-select.js"></script>
 		<script src="js/file.js"></script>
+		<script src="js/select2.full.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 		<script src="js/scripts-lk.js"></script>

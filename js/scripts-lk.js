@@ -38,8 +38,8 @@ $(() => {
 
 
 
-      // Кастомный select
-	    $('select').niceSelect()
+      // // Кастомный select
+	    // $('select').niceSelect()
 
 
 
@@ -119,6 +119,16 @@ $(() => {
       $('body').on('change', '.form input[type=file]', function (e) {
         $(this).closest('.file').find('label').text($(this).val())
       })
+
+
+
+
+      $(document).ready(function() {
+        $('.js-example-basic-multiple').select2();
+      });
+
+      
+
 
 
     	// Удаление файла
