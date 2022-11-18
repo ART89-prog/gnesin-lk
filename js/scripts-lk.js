@@ -39,7 +39,7 @@ $(() => {
 
 
       // // Кастомный select
-	    // $('select').niceSelect()
+	    $('.select-block').niceSelect()
 
 
 
