@@ -119,9 +119,6 @@
     border-radius: 8px;
     margin-bottom: 48px;
 }
-.main-content_item:first-child {
-    padding: 44px 48px 31px;
-}
 .main-content_item:last-child {
     margin-bottom: 0;
 }
@@ -711,7 +708,7 @@ tbody td.status.gray {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
     padding: 15px 38px 54px;
-    height: 300px;
+    min-height: 300px;
 }
 .modal.delete form {
     padding: 0px;
@@ -1157,6 +1154,7 @@ form .line.mb0 {
     border-radius: 6px;
     text-align: center;
     cursor: pointer;
+    padding: 0 10px;
 }
 .loading-form .file_btn span {
     font-weight: 700;
@@ -1166,9 +1164,6 @@ form .line.mb0 {
 }
 .step2 .steps_bottom {
     width: calc(100%/2 - 25px);
-}
-.main-content_block {
-    width: 100%;
 }
 
 
@@ -1207,6 +1202,28 @@ form .line.mb0 {
     height: 22px;
     flex-shrink: 0;
     margin-right: 10px;
+}
+.delete-file_box {
+    display: flex;
+    margin-top: auto;
+}
+.modal.delete .upload-file__wrapper {
+    width: 100%;
+}
+.modal.delete .upload-file__label {
+    width: 100%;
+    height: 40px;
+    background: #55002B;
+    border-radius: 6px;
+    text-align: center;
+}
+.modal.delete .upload-file__text {
+    margin-right: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #F2EEE9;
 }
 .modal.delete .removal-button {
     width: 100%;
@@ -1452,26 +1469,26 @@ form input[type=radio]:checked + label:before{
     padding: 44px 48px 29px;
 }
 .order-history .main-content_item thead th:nth-child(1) {
-    width: 55%;
+    width: 71%;
 }  
 .order-history .main-content_item thead th:nth-child(2) {
-    width: 15%;
+    width: 12%;
 }  
 .order-history .main-content_item thead th:nth-child(3) {
-    width: 15%;
+    width: 17%;
 }  
 .order-history .main-content_item thead th:nth-child(4) {
     width: 163px;
     text-align: center;
 }  
 .order-history .main-content_item tbody td:nth-child(1) {
-    width: 55%;
+    width: 71%;
 }  
 .order-history .main-content_item tbody td:nth-child(2) {
-    width: 15%;
+    width: 12%;
 }  
 .order-history .main-content_item tbody td:nth-child(3) {
-    width: 15%;
+    width: 17%;
 }  
 .order-history .main-content_item tbody td:nth-child(4) {
     width: 163px;
@@ -1522,6 +1539,9 @@ form input[type=radio]:checked + label:before{
     .main-content_block {
         padding: 40px 0px 120px 0px;
     }
+    .main-content_block {
+        width: 100%;
+    }
 
     
 }
@@ -1544,9 +1564,6 @@ form input[type=radio]:checked + label:before{
     }
     .main-content_item {
         padding: 24px;
-    }
-    .main-content_item:first-child {
-        padding: 24px 24px 0px;
     }
     tbody td {
         padding: 5px 15px;
@@ -1670,6 +1687,16 @@ form input[type=radio]:checked + label:before{
         padding: 24px;
     }
 
+    .order-history .main-content_item tbody td:nth-child(4) {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .order-history .main-content_item:first-child {
+        padding: 24px;
+    }
+    .steps_bottom.mt48 {
+        margin-top: 48px;
+    }
 
 
 
@@ -1691,9 +1718,6 @@ form input[type=radio]:checked + label:before{
     }
     .main-content_item table tbody td img {
         margin-right: 0;
-    }
-    .main-content_item:first-child {
-        padding: 10px 10px 0px;
     }
     tbody td.status {
         font-size: 12px;
@@ -1739,6 +1763,8 @@ form input[type=radio]:checked + label:before{
         margin-top: 10px;
         font-size: 14px;
         height: 32px;
+        line-height: 32px;
+        padding: 0 20px;
     }
     .main-content_item .nice-select {
         max-width: 210px;
@@ -1827,6 +1853,13 @@ form input[type=radio]:checked + label:before{
     }
     .loading form .line .field label {
         margin-bottom: 8px;
+    }
+    .order-history .main-content_item-title {
+        margin-right: 0px;
+        max-width: 100%;
+    }
+    .order-history .main-content_item:first-child {
+        padding: 16px;
     }
 
 
@@ -1934,6 +1967,15 @@ form input[type=radio]:checked + label:before{
     .steps_bottom.fdc a {
         width: 100%;
     }
+    .main-content_item {
+        padding: 16px;
+    }
+    .loading-form .removal-button {
+        height: 38px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
 
 
 
