@@ -44,7 +44,7 @@
 }
 .aside_name {
     font-weight: 900;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 20px;
     text-transform: uppercase;
     color: var(--text_color);
@@ -217,7 +217,7 @@ tbody td.status.green {
 }
 tbody td.status.gray {
     background: #F2EEE9;
-    color: #56595D;
+    color: var(--text_color2);
 }
 .main-content_item .releases_item-title {
     font-weight: 800;
@@ -360,7 +360,7 @@ tbody td.status.gray {
     font-weight: 900;
     font-size:  var(--font_size);
     line-height: 16px;
-    color: #2C3036;  
+    color: var(--text_color);  
     margin-bottom: 14px; 
 }
 
@@ -456,10 +456,10 @@ tbody td.status.gray {
 }
 .shipped-releases_item-title {
     font-weight: 800;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     text-transform: uppercase;
-    color: #2C3036;
+    color: var(--text_color);  
 }
 .shipped-releases .pagination {
     margin: 48px 0 0;
@@ -477,15 +477,15 @@ tbody td.status.gray {
     line-height: 24px;
     text-align: center;
     text-transform: uppercase;
-    color: #55002B;  
+    color: var(--bg2);  
     margin-bottom: 24px;
 }
 .shipped_item-text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 18px;
     text-transform: uppercase;
-    color: #2C3036;
+    color: var(--text_color);  
     margin-bottom: 24px;
 }
 .shipped-releases_modal ul {
@@ -499,29 +499,29 @@ tbody td.status.gray {
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #2C3036;
+    color: var(--text_color);  
     margin-bottom: 14px;
 }
 .shipped-releases_modal .shipped-releases_item-isrc {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 18px;
     text-transform: uppercase;
-    color: #2C3036;
+    color: var(--text_color);  
 }
 .shipped-releases_modal .shipped-releases_item-date span {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 18px;
     text-transform: uppercase;
-    color: #2C3036;    
+    color: var(--text_color);     
 }
 .shipped-releases_modal .shipped-releases_item-date-title {    
     font-weight: 800;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     text-transform: uppercase;
-    color: #2C3036;
+    color: var(--text_color);  
     margin-bottom: 14px;
 }
 
@@ -568,9 +568,9 @@ tbody td.status.gray {
     border-radius: 6px;
     font-family: var(--font_family);
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
-    color: #56595D;
+    color: var(--text_color2);
 }
 .settings_item form .line,
 .settings_item-box form .line {
@@ -586,7 +586,7 @@ tbody td.status.gray {
     width: 118px;
     height: 40px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     color: #FFFFFF;
     margin-top: 0;
@@ -597,7 +597,7 @@ tbody td.status.gray {
     width: 118px;
     height: 40px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     color: #FFFFFF;
     margin-top: 0;
@@ -614,14 +614,14 @@ tbody td.status.gray {
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #55002B;
+    color: var(--bg2);  
 }
 .settings_item-box form .line .field label,
 .settings_item form .line .field label {
     font-weight: 800;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
-    color: #2C3036;
+    color: var(--text_color);  
     margin-bottom: 16px;
 }
 .settings_item-photo {
@@ -658,9 +658,9 @@ tbody td.status.gray {
     display: block;
     text-decoration: none;
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
-    color: #56595D;
+    color: var(--text_color2);
 }
 .settings_item-photo:hover .settings_item-photo-links {
     display: block;
@@ -673,11 +673,11 @@ tbody td.status.gray {
 }
 .settings_item-name {
     font-weight: 900;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
-    color: #2C3036;
+    color: var(--text_color);  
 }
 .settings_item.mb0 {
    margin-bottom: 0;
@@ -689,7 +689,7 @@ tbody td.status.gray {
 }
 .settings_item-head .tabs button {
     background: none;
-    color: #56595D;
+    color: var(--text_color2);
     padding: 0px;
     margin: 0;
     border-radius: 0;
@@ -699,7 +699,7 @@ tbody td.status.gray {
 }
 .settings_item-head .tabs button.active {
     background: none;
-    color: #55002B;
+    color: var(--bg2);  
 }
 
 
@@ -730,7 +730,7 @@ tbody td.status.gray {
     font-size: 14px;
     line-height: 22px;
     text-transform: uppercase;
-    color: #55002B;
+    color: var(--bg2);  
     margin-bottom: 44px;
 }
 .delete_form-text {
@@ -750,18 +750,18 @@ tbody td.status.gray {
     font-size: 14px;
     line-height: 14px;
     color: #FFFFFF;
-    background: #55002B;
+    background: var(--bg2);  
     border-radius: 8px;
 }
 .delete_form-btns button:first-child {
-    color: #56595D;
+    color: var(--text_color2);
     background: #fff;
     border: none;
     margin-right: 14px;
 }
 .delete_form-btns button:first-child:hover {
     color: #FFFFFF;
-    background: #55002B;
+    background: var(--bg2);  
 }
 
 
@@ -833,10 +833,10 @@ tbody td.status.gray {
 }
 .steps_item.active .steps_item-number,
 .steps_item.active .steps_item-number span {
-    color: #55002B;
+    color: var(--bg2);  
 }
 .steps_item.active .steps_item-line:after {
-    background: #55002B;
+    background: var(--bg2);  
 }
 .steps_item.active .steps_item-text {
     color: #1A1A18;
@@ -914,7 +914,7 @@ tbody td.status.gray {
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #55002B;
+    color: var(--bg2);  
     margin-bottom: 48px;
 }
 .steps_info-title.mb16 {
@@ -922,24 +922,24 @@ tbody td.status.gray {
 }
 .steps_info-text {
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 20px;
-    color: #2C3036;
+    color: var(--text_color);  
     margin-bottom: 32px;
 }
 .steps_info-text.df {
     display: flex;
     align-items: center;
-    color: #56595D;
+    color: var(--text_color2);
 }
 .steps_info-text img {
     margin-right: 11px;
 }
 .steps_info-booking-title {
     font-weight: 900;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
-    color: #2C3036;
+    color: var(--text_color);  
     margin-bottom: 24px;
 }
 .steps_info-box {
@@ -981,19 +981,19 @@ form .line.mb0 {
 }
 .steps_info-amount-text {
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
-    color: #56595D;
+    color: var(--text_color2);
 }
 .steps_info-amount-box input[type=number] {
     width: 20px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #56595D;
+    color: var(--text_color2);
     margin-left: 4px;
     margin-right: 4px;
     border: none;
@@ -1008,15 +1008,15 @@ form .line.mb0 {
 }
 .steps_info-calculator-title {
     font-weight: 900;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
-    color: #2C3036;
+    color: var(--text_color);  
 }
 .steps_info-calculator .price {
     font-weight: 900;
     font-size: 20px;
     line-height: 20px;
-    color: #55002B;
+    color: var(--bg2);  
 }
 .steps_info-amount-wrap {
     display: flex;
@@ -1029,10 +1029,10 @@ form .line.mb0 {
 }
 .steps_info-subtitle {
     font-weight: 800;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     text-transform: uppercase;
-    color: #55002B;
+    color: var(--bg2);  
     margin-bottom: 16px;
 }
 .steps_info-text p {
@@ -1053,7 +1053,7 @@ form .line.mb0 {
     font-size: 14px;
     line-height: 14px;
     color: #FFFFFF;
-    background: #55002B;
+    background: var(--bg2);  
     border: 2px solid transparent;
     border-radius: 8px;
     text-decoration: none;
@@ -1061,7 +1061,7 @@ form .line.mb0 {
     text-align: center;
 }
 .steps_bottom a:first-child {
-    color: #56595D;
+    color: var(--text_color2);
     background: #fff;
     border: none;
     margin-right: 14px;
@@ -1069,12 +1069,12 @@ form .line.mb0 {
 }
 .steps_bottom a:first-child:hover {
     color: #FFFFFF;
-    background: #55002B;
+    background: var(--bg2);  
 }
 .steps_bottom a:last-child:hover {
-    color: #55002B;
+    color: var(--bg2);  
     background: #FFFFFF;
-    border: 2px solid #55002B;
+    border: 2px solid var(--bg2); 
 }
 
 .loading {
@@ -1108,7 +1108,7 @@ form .line.mb0 {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: #2C3036;
+    color: var(--text_color);  
 }
 .loading-form_text p {
     margin-bottom: 10px;
@@ -1144,7 +1144,7 @@ form .line.mb0 {
     text-align: center;
     cursor: pointer;
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
 }
 .loading-form .file_btn {
@@ -1158,9 +1158,9 @@ form .line.mb0 {
 }
 .loading-form .file_btn span {
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 44px;
-    color: #56595D !important;
+    color: var(--text_color2) !important;
 }
 .step2 .steps_bottom {
     width: calc(100%/2 - 25px);
@@ -1177,7 +1177,7 @@ form .line.mb0 {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: #2C3036;
+    color: var(--text_color);  
 }
 .modal.delete .loading-form_text img {
     margin-right: 11px;
@@ -1213,14 +1213,14 @@ form .line.mb0 {
 .modal.delete .upload-file__label {
     width: 100%;
     height: 40px;
-    background: #55002B;
+    background: var(--bg2);  
     border-radius: 6px;
     text-align: center;
 }
 .modal.delete .upload-file__text {
     margin-right: 0;
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 40px;
     text-align: center;
     color: #F2EEE9;
@@ -1232,13 +1232,13 @@ form .line.mb0 {
     text-align: center;
     cursor: pointer;
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
 }
 .modal.delete .file_btn {
     width: 100% !important;
     height: 40px;
-    background: #55002B;
+    background: var(--bg2);  
     border-radius: 6px;
     text-align: center;
     cursor: pointer;
@@ -1246,15 +1246,15 @@ form .line.mb0 {
 }
 .modal.delete .file_btn span {
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 40px;
     color: #F2EEE9;
 }
 .loading form .line .field label {
     font-weight: 800;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
-    color: #2C3036;  
+    color: var(--text_color);  
     margin-bottom: 16px; 
 }
 .loading form .line .field label span {
@@ -1329,13 +1329,13 @@ form .line.mb0 {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    color: #56595D;
+    color: var(--text_color2);
 }
 .form_radio label {
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
-    color: #56595D;
+    color: var(--text_color2);
     padding-bottom: 16px;
     background: #F1F1F1;
 }
@@ -1353,9 +1353,9 @@ form .line.mb0 {
     user-select: none;  
     background: none;
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
-    color: #56595D;
+    color: var(--text_color2);
 }
 .form_radio-box {
     display: flex;
@@ -1374,7 +1374,7 @@ form input[type=radio] + label:before {
     background: #D4D4D4;  
 }
 form input[type=radio]:checked + label:before{
-    background: #55002B;
+    background: var(--bg2);  
 }
 
 .payment {
@@ -1388,9 +1388,9 @@ form input[type=radio]:checked + label:before{
 }
 .payment_text {
     font-weight: 900;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
-    color: #2C3036; 
+    color: var(--text_color);   
 }
 .payment .table-wrap {
     margin-top: 16px;
@@ -1404,7 +1404,7 @@ form input[type=radio]:checked + label:before{
     font-weight: 700;
     font-size: 14px;
     line-height: 14px;
-    color: #56595D;   
+    color: var(--text_color2);
     text-align: center;
     padding: 13px 11px;
     background: #F2EEE9;
@@ -1413,9 +1413,9 @@ form input[type=radio]:checked + label:before{
     background: #F7F5F2;
     padding: 16px 11px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
-    color: #56595D;
+    color: var(--text_color2);
     text-align: center;
 }
 .payment thead th:first-child {
@@ -1439,22 +1439,22 @@ form input[type=radio]:checked + label:before{
     font-weight: 900;
     font-size: 20px;
     line-height: 20px;
-    color: #55002B;       
+    color: var(--bg2);        
 }
 
 .payment_subtitle {
     font-weight: 800;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     text-transform: uppercase;
-    color: #55002B;
+    color: var(--bg2);  
     margin-bottom: 16px;   
 }
 .payment_text {
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 20px;
-    color: #2C3036;
+    color: var(--text_color);  
 }
 .payment_text p {
     margin-bottom: 15px;
@@ -1509,12 +1509,12 @@ form .line .field input.error {
     padding-bottom: 0px;
     padding-right: 0px;
     position: relative;
-    height: 44px;
+    min-height: 44px;
     font-family: var(--font_family);
     font-weight: 600;
-    font-size: 16px;
-    padding: 7px 16px;
-    color: #56595D;
+    font-size: var(--font_size);
+    padding: 7px 32px 7px 15px;
+    color: var(--text_color2);
     cursor: pointer;
 }
 .loading .select2-container--default .select2-selection--multiple .select2-selection__choice {
@@ -1530,10 +1530,10 @@ form .line .field input.error {
     vertical-align: bottom;
     white-space: nowrap;
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--font_size);
     line-height: 16px;
     color: #FFFFFF;
-    margin: 0 0 0 8px;
+    margin: 0 0 3px 8px;
 }
 .loading .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
     background-color: transparent;
@@ -1560,7 +1560,9 @@ form .line .field input.error {
     background-color: transparent;
     color: #fff;
 }
-
+.loading .select2-container {
+    width: 100% !important;
+}
 .loading .select2-container::before {
     position: absolute;
     content: "";
@@ -1570,7 +1572,7 @@ form .line .field input.error {
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 2;
+    z-index: 1;
 }
 .loading .select2-container--open::before {
     position: absolute;
@@ -1582,8 +1584,96 @@ form .line .field input.error {
     top: 50%;
     transform: translateY(-50%);
     transform: rotate(180deg);
-    z-index: 2;
+    z-index: 1;
 }
+
+.tracklist {
+    margin-bottom: 28px;
+}
+.tracklist ul {
+    list-style: none;
+    counter-reset: step; 
+}
+.tracklist ul li {
+    position: relative;
+    padding-left: 64px;
+    margin-bottom: 14px;    
+}
+.tracklist_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px 12px 43px;
+    background: #F7F5F2;
+    border-radius: 6px;
+}
+.tracklist_wrap.error {
+    border: 1px solid #E20000;
+}
+.tracklist ul li:last-child {
+    margin-bottom: 0;
+}
+.tracklist ul li:before {
+    font-family: var(--font_family);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 44px;
+    color: #F2EEE9;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 50px;
+    height: 44px;    
+    background: #C6BEB3;
+    border-radius: 6px;
+    content: counters(step, '') '';
+    counter-increment: step;
+    text-align: center;
+}
+.tracklist_title {
+    font-weight: 800;
+    font-size: var(--font_size);
+    line-height: 16px;
+    color: var(--text_color);  
+    margin-bottom: 30px;
+}
+.tracklist_name {
+    font-weight: 600;
+    font-size: var(--font_size);
+    line-height: 16px;
+    color: var(--text_color2);
+    position: relative;
+    margin-right: 20px;
+}
+.tracklist_name:before {
+    position: absolute;
+    content: "";
+    background: url(../images/dropdown.svg);
+    width: 15px;
+    height: 10px;
+    left: -28px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tracklist_info {
+    display: flex;
+    align-items: center;
+}
+.tracklist_date {
+    font-weight: 600;
+    font-size: var(--font_size);
+    line-height: 16px;
+    color: var(--text_color2);
+    margin-right: 28px;
+}
+.tracklist_delete {
+    font-weight: 600;
+    font-size: var(--font_size);
+    line-height: 16px;
+    color: var(--bg2);  
+}
+
 
 
 
@@ -1950,6 +2040,44 @@ form .line .field input.error {
     .order-history .main-content_item:first-child {
         padding: 16px;
     }
+    .tracklist ul li:before {
+        font-size: 18px;
+        line-height: 34px;
+        width: 34px;
+        height: 34px;
+        border-radius: 4px;
+    }
+    .tracklist ul li {
+        padding-left: 50px;
+        margin-bottom: 10px;
+    }
+    .tracklist_wrap {
+        padding: 9px 15px 9px 30px;
+        border-radius: 4px;
+    }
+    .tracklist_name {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .tracklist_name:before {
+        width: 11px;
+        height: 8px;
+        left: -22px;
+        background-size: cover;
+    }
+    .tracklist_date {
+        font-size: 14px;
+        line-height: 14px;
+        margin-right: 18px;
+    }
+    .tracklist_delete {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .tracklist_title {
+        margin-bottom: 16px;
+    }
+
 
 
 }
@@ -2063,6 +2191,19 @@ form .line .field input.error {
         height: 38px;
         font-size: 14px;
         line-height: 14px;
+    }
+    .tracklist_wrap {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .tracklist_name {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .tracklist_info {
+        justify-content: space-between;
+        width: 100%;
     }
 
 
