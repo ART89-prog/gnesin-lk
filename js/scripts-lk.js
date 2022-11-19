@@ -127,6 +127,12 @@ $(() => {
         $('.js-example-basic-multiple').select2();
       });
 
+      $(".js-example-language").select2({
+        language: "es"
+      });
+      
+
+
       
 
 
