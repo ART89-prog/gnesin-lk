@@ -91,6 +91,9 @@
     line-height: 16px;
     color:  var(--text_color);
 }
+.aside_link:hover {
+    color: #073c9e;
+}
 .aside_links li a {
     text-decoration: none;
     display: flex;
@@ -102,7 +105,7 @@
     transition: all .4s;
 }
 .aside_links li a:hover {
-    color: #060f21;
+    color: #073c9e;
 }
 .aside_links li a span {
     display: block;
@@ -249,6 +252,9 @@ tbody td.status.gray {
 }
 .main-content_item table tbody td img {
     margin-right: 0;
+}
+.main-content_item .report tbody td {
+    padding: 0;
 }
 
 .main-content_item .nice-select:after {
@@ -837,7 +843,6 @@ tbody td.status.gray {
 .steps_items {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-right: -20px;
     margin-bottom: 60px;
 }
@@ -1668,8 +1673,7 @@ form .line .field input.error {
     width: 15px;
     height: 10px;
     right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 16px;
     transform: rotate(180deg);
     z-index: 1;
 }
@@ -2109,9 +2113,18 @@ form .line .field input.error {
     }
 
     .steps_items {
-        flex-wrap: wrap;
+        overflow-x: auto;
         justify-content: flex-start;
         margin-bottom: 20px;
+    }
+    .steps_items::-webkit-scrollbar { 
+        width: 0; 
+    }
+    .steps_items { 
+        -ms-overflow-style: none; 
+    }
+    .steps_items { 
+        overflow: -moz-scrollbars-none; 
     }
     .steps_items > * {
         width: calc(100%/4 - 20px);
@@ -2120,12 +2133,15 @@ form .line .field input.error {
     }
     .steps_info > * {
         width: 100%;
-        margin-left: 0px;        
+        margin-left: 0px;   
+    } 
+    .steps_info-right {
+        margin-top: 30px;
     }
     .steps_info {
         margin-left: 0px;  
         flex-wrap: wrap;  
-        flex-direction: column-reverse;    
+        flex-direction: column;    
     }
     .steps_info-booking {
         max-width: 100%;
@@ -2200,10 +2216,16 @@ form .line .field input.error {
         padding: 10px 5px 10px 0;
     }
     .accordion_item .tracklist_name:before {
-        left: 22px;
+        left: -22px;
+        width: 11px;
+        height: 8px;
+        background-size: cover;
     }
     .accordion_item.active .tracklist_name:before {
         left: -22px;
+        width: 11px;
+        height: 8px;
+        background-size: cover;
     }
 
 
@@ -2332,7 +2354,9 @@ form .line .field input.error {
         justify-content: space-between;
         width: 100%;
     }
-
+    .modal form button {
+        font-size:16px;
+    }
 
 
 

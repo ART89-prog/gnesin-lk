@@ -124,10 +124,7 @@ $(() => {
 
 
   
-      $('.js-example-basic-multiple').select2();
-  
-
-      $(".js-example-language").select2({
+      $('.js-example-basic-multiple').select2({
         language: "ru"
       });
       
