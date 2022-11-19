@@ -361,6 +361,15 @@ header .cont {
     color: var(--bg2);
     border: 2px solid var(--bg2);
 }
+.main-content_item .releases_left .contact_callback {
+    color: #3D001B;
+    background: #F2EEE9;
+    transition: all .4s;
+}
+.main-content_item .releases_left .contact_callback:hover {
+    background: var(--bg2);
+    color: #fff;
+}
 .header_social {
     display: flex;
     flex-wrap: nowrap;
