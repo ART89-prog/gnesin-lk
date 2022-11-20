@@ -173,6 +173,13 @@
 							<div class="steps_items">
 								<div class="steps_item active">
 									<div class="steps_item-number">
+										1<span>шаг</span>
+									</div>
+									<div class="steps_item-line"></div>
+									<div class="steps_item-text">Оформление заказа</div>
+								</div>
+								<div class="steps_item active">
+									<div class="steps_item-number">
 										2<span>шаг</span>
 									</div>
 									<div class="steps_item-line"></div>
@@ -206,7 +213,7 @@
 									<div class="steps_item-line"></div>
 									<div class="steps_item-text">Оплата</div>
 								</div>
-								<div class="steps_item mr40">
+								<div class="steps_item">
 									<div class="steps_item-number">
 										7<span>шаг</span>
 									</div>
@@ -236,7 +243,90 @@
 												</div>
 				
 												<div class="data">
-													jkljhkljhklhjkljlj
+													<div class="line">
+														<div class="field">
+															<label for="name9">Загрузить трек <span>*</span></label>
+															<div class="file file-uploader">
+																<div class="field file-chooser">
+																	<input class="file-chooser__input" name="file[]" type="file" id="file">
+																	<label for="file" class="file_btn">
+																		<span>Прикрепить файл</span>
+																	</label>												
+																	<div class="selected list file-uploader__message-area"></div>
+																</div>
+															</div>
+														</div>
+														<div class="loading-form_text">
+															<img src="images/warning.svg" alt="">
+															<span>Формат  загруаемого трека .wav, .flac</span>
+														</div>
+													</div>
+													<div class="line">
+														<div class="field">
+															<label for="name2">Название трека <span>*</span></label>
+															<input type="text" id="name2" placeholder="Name">
+														</div>
+													</div>
+													<div class="line">
+														<div class="field">
+															<label for="name3">Автор музыки (ФИО) <span>*</span></label>
+															<input type="text" id="name3" placeholder="Name">
+														</div>
+													</div>
+													<div class="line">
+														<div class="field">
+															<label for="name4">Автор слов (ФИО) <span>*</span></label>
+															<input type="text" id="name4" placeholder="Name">
+														</div>
+													</div>
+													<div class="line">
+														<div class="field">
+															<label for="name5">ISRC-код</label>
+															<textarea id="name5" placeholder="Введите текст трека..."></textarea>
+														</div>
+														<div class="loading-form_text">
+															<img src="images/warning.svg" alt="">
+															<span>Все части трека должны быть отделены пустой строкой. Точки, запятые и прочие знаки в конце строки ставить не нужно. Запрещено использовать фигурные скобки и элементы программного кода.</span>
+														</div>
+													</div>
+													<div class="line">
+														<div class="field">
+															<label for="name6">Версия трека</label>
+															<input type="checkbox" id="agree_check21" checked="">
+															<label for="agree_check21">Live</label>
+															<input type="checkbox" id="agree_check22">
+															<label for="agree_check22">Cover</label>
+															<input type="checkbox" id="agree_check23">
+															<label for="agree_check23">Remix</label>
+															<input type="checkbox" id="agree_check24">
+															<label for="agree_check24">Instrumental</label>
+														</div>
+														<div class="loading-form_text">
+															<img src="images/warning.svg" alt="">
+															<span>Если это предполагается.</span>
+														</div>
+													</div>
+													<div class="line">
+														<div class="field">
+															<label for="name7">Секунду запуска предпрослушивания трека</label>
+															<input type="text" id="name7" placeholder="00;00;00;00">
+														</div>
+													</div>
+													<div class="line">
+														<div class="field">
+															<label for="name8">Ненормативная лексика <span>*</span></label>
+															<div class="form_radio-box">
+																<div class="form_radio">
+																	<input id="radio-1" type="radio" name="radio" value="1" checked="">
+																	<label for="radio-1">Да</label>                    
+																</div>
+																<div class="form_radio">
+																	<input id="radio-2" type="radio" name="radio" value="1">
+																	<label for="radio-2">Нет</label>                    
+																</div>	
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 				

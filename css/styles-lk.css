@@ -458,13 +458,13 @@ tbody td.status.gray {
     align-items: center;
     font-weight: 700;
     font-size: var(--font_size);
-    line-height: 16px;
+    line-height: 20px;
     color: var(--text_color2);
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 }
 .modal.filter form input[type=checkbox]+label:before {
     position: absolute;
-    top: -3px;
+    top: 0px;
     left: 0;
     display: block;
     width: 20px;
@@ -476,7 +476,7 @@ tbody td.status.gray {
 }
 .modal.filter form input[type=checkbox]+label:after {
     position: absolute;
-    top: 3px;
+    top: 5px;
     left: 4px;
     width: 11px;
     height: 6px;
@@ -938,18 +938,18 @@ tbody td.status.gray {
     align-items: center;
     font-weight: 700;
     font-size: var(--font_size);
-    line-height: 18px;
+    line-height: 20px;
     color: var(--text_color2);
     margin-bottom: 0px;
 }
 .steps_info-booking .line .field label img {
-    width: 20px;
+    width: 21px;
     height: 20px;
     object-fit: cover;
 }
 .steps_info-booking input[type=checkbox]+label:before {
     position: absolute;
-    top: -1px;
+    top: 0px;
     left: 0;
     display: block;
     width: 20px;
@@ -961,7 +961,7 @@ tbody td.status.gray {
 }
 .steps_info-booking input[type=checkbox]+label:after {
     position: absolute;
-    top: 5px;
+    top: 6px;
     left: 5px;
     width: 11px;
     height: 6px;
@@ -1333,7 +1333,7 @@ form .line.mb0 {
 .loading form .line .field label {
     font-weight: 800;
     font-size: var(--font_size);
-    line-height: 16px;
+    line-height: 20px;
     color: var(--text_color);  
     margin-bottom: 16px; 
 }
@@ -1369,7 +1369,7 @@ form .line.mb0 {
 }
 .loading-form input[type=checkbox]+label:before {
     position: absolute;
-    top: -2px;
+    top: 0px;
     left: 0;
     display: block;
     width: 20px;
@@ -1381,7 +1381,7 @@ form .line.mb0 {
 }
 .loading-form input[type=checkbox]+label:after {
     position: absolute;
-    top: 4px;
+    top: 6px;
     left: 5px;
     width: 11px;
     height: 6px;
@@ -1596,6 +1596,14 @@ form .line .field input.error {
     padding: 7px 32px 7px 15px;
     color: var(--text_color2);
     cursor: pointer;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: none;
+}
+.select2-dropdown {
+    border: none;
+    background: #F7F5F2;
+    padding: 7px 32px 7px 15px;
 }
 .select2-results {
     font-family: var(--font_family);
