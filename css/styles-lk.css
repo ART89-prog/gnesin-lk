@@ -1709,15 +1709,17 @@ form .line .field input.error {
 }
 .accordion_item .data {
     display: none;
-    padding: 20px;
-    margin-left: 64px;
+    padding: 28px 20px 20px 64px;
     border-radius: 6px;
-    background: #F7F5F2;
+    background: #fff;
     font-weight: 600;
     font-size: var(--font_size);
     line-height: 16px;
     color: var(--text_color2);
     position: relative;
+}
+.accordion_item .data form {
+    max-width: 100%;
 }
 .tracklist_wrap {
     display: flex;
@@ -2191,7 +2193,6 @@ form .line .field input.error {
         border-radius: 4px;
     }
     .tracklist ul li {
-        padding-left: 50px;
         margin-bottom: 10px;
     }
     .tracklist_wrap {
@@ -2234,6 +2235,10 @@ form .line .field input.error {
         width: 11px;
         height: 8px;
         background-size: cover;
+    }
+
+    .steps_item.active {
+        display: none;
     }
 
 
@@ -2363,7 +2368,10 @@ form .line .field input.error {
         width: 100%;
     }
     .modal form button {
-        font-size:16px;
+        font-size: 16px;
+    }
+    .accordion_item .data {
+        padding: 20px;
     }
 
 

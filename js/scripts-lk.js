@@ -63,7 +63,12 @@ $(() => {
 
 
 
-    $(".steps_item:not(.active)").prev(".active").show();
+
+        if ($(window).width() < 767){
+            $(".steps_item:not(.active)").prev(".active").show();
+        }
+
+        
 
       // Изменение количества товара
       $('body').on('click', '.steps_info-amount .minus', function(e) {
