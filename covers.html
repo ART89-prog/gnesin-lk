@@ -201,14 +201,11 @@
 											<label><span class="covers_label">ВКонтакте</span><br> 
 												Версия для браузера
 											</label>
-											<div class="file file-uploader">
-												<div class="field file-chooser">
-													<input class="file-chooser__input" name="file" type="file" id="file">
-													<label for="file" class="file_btn">
-														<span>Прикрепить файл</span>
-													</label>												
-													<div class="selected list file-uploader__message-area"></div>
-												</div>
+											<div class="input__wrapper">
+												<input name="file" type="file" id="input__file1" class="input input__file" multiple>
+												<label for="input__file1" class="input__file-button">
+												   <span class="input__file-button-text">Прикрепить файл</span>
+												</label>
 											</div>
 										</div>
 										<div class="loading-form_text">
@@ -220,14 +217,11 @@
 									<div class="line">
 										<div class="field">
 											<label>Мобильная версия</label>
-											<div class="file file-uploader">
-												<div class="field file-chooser">
-													<input class="file-chooser__input" name="file2" type="file" id="file2">
-													<label for="file2" class="file_btn">
-														<span>Прикрепить файл</span>
-													</label>												
-													<div class="selected list file-uploader__message-area"></div>
-												</div>
+											<div class="input__wrapper">
+												<input name="file" type="file" id="input__file2" class="input input__file" multiple>
+												<label for="input__file2" class="input__file-button">
+												   <span class="input__file-button-text">Прикрепить файл</span>
+												</label>
 											</div>
 										</div>
 										<div class="loading-form_text">
@@ -239,14 +233,11 @@
 									<div class="line">
 										<div class="field">
 											<label><span class="covers_label">Яндекс.музыка</span></label>
-											<div class="file file-uploader">
-												<div class="field file-chooser">
-													<input class="file-chooser__input" name="file3" type="file" id="file3">
-													<label for="file3" class="file_btn">
-														<span>Прикрепить файл</span>
-													</label>												
-													<div class="selected list file-uploader__message-area"></div>
-												</div>
+											<div class="input__wrapper">
+												<input name="file" type="file" id="input__file3" class="input input__file" multiple>
+												<label for="input__file3" class="input__file-button">
+												   <span class="input__file-button-text">Прикрепить файл</span>
+												</label>
 											</div>
 										</div>
 										<div class="loading-form_text">
@@ -258,14 +249,11 @@
 									<div class="line">
 										<div class="field">
 											<label><span class="covers_label">Звук</span></label>
-											<div class="file file-uploader">
-												<div class="field file-chooser">
-													<input class="file-chooser__input" name="file4" type="file" id="file4">
-													<label for="file4" class="file_btn">
-														<span>Прикрепить файл</span>
-													</label>												
-													<div class="selected list file-uploader__message-area"></div>
-												</div>
+											<div class="input__wrapper">
+												<input name="file" type="file" id="input__file4" class="input input__file" multiple>
+												<label for="input__file4" class="input__file-button">
+												   <span class="input__file-button-text">Прикрепить файл</span>
+												</label>
 											</div>
 										</div>
 										<div class="loading-form_text">
@@ -277,14 +265,11 @@
 									<div class="line">
 										<div class="field">
 											<label><span class="covers_label">Apple Music</span></label>
-											<div class="file file-uploader">
-												<div class="field file-chooser">
-													<input class="file-chooser__input" name="file5" type="file" id="file5">
-													<label for="file5" class="file_btn">
-														<span>Прикрепить файл</span>
-													</label>												
-													<div class="selected list file-uploader__message-area"></div>
-												</div>
+											<div class="input__wrapper">
+												<input name="file" type="file" id="input__file5" class="input input__file" multiple>
+												<label for="input__file5" class="input__file-button">
+												   <span class="input__file-button-text">Прикрепить файл</span>
+												</label>
 											</div>
 										</div>
 										<div class="loading-form_text">
@@ -296,14 +281,11 @@
 									<div class="line">
 										<div class="field">
 											<label><span class="covers_label">Youtube Music    </span></label>
-											<div class="file file-uploader">
-												<div class="field file-chooser">
-													<input class="file-chooser__input" name="file6" type="file" id="file6">
-													<label for="file6" class="file_btn">
-														<span>Прикрепить файл</span>
-													</label>												
-													<div class="selected list file-uploader__message-area"></div>
-												</div>
+											<div class="input__wrapper">
+												<input name="file" type="file" id="input__file6" class="input input__file" multiple>
+												<label for="input__file6" class="input__file-button">
+												   <span class="input__file-button-text">Прикрепить файл</span>
+												</label>
 											</div>
 										</div>
 										<div class="loading-form_text">
@@ -514,6 +496,25 @@
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 		<script src="js/scripts-lk.js"></script>
+
+		<script>
+			let inputs = document.querySelectorAll('.input__file');
+			Array.prototype.forEach.call(inputs, function (input) {
+			  let label = input.nextElementSibling,
+				labelVal = label.querySelector('.input__file-button-text').innerText;
+		  
+			  input.addEventListener('change', function (e) {
+				let countFiles = '';
+				if (this.files && this.files.length >= 1)
+				  countFiles = this.files.length;
+		  
+				if (countFiles)
+				  label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
+				else
+				  label.querySelector('.input__file-button-text').innerText = labelVal;
+			  });
+			});
+		</script>
 
 	
 	</body>
