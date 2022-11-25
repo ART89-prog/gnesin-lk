@@ -8,6 +8,10 @@ $(() => {
         $('body').addClass('menu_open')
         $('header .menu').addClass('show')
         $('.overlay').fadeIn(300)
+
+        $('.profile').removeClass('active')
+        $('body').removeClass('menu_open_lk')
+        $('.main-content_aside').removeClass('show')
     })
 
     $('header .close_btn, header .menu .item a, .overlay, .contact_callback').click((e) => { 
