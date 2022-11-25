@@ -1233,6 +1233,7 @@ form .line.mb0 {
     font-weight: 700;
     font-size: var(--font_size);
     line-height: 16px;
+    margin-top: 8px;
 }
 .loading-form .file_btn {
     width: 177px;
@@ -1343,6 +1344,7 @@ form .line.mb0 {
     line-height: 20px;
     color: var(--text_color);  
     margin-bottom: 16px; 
+    display: inline-block;
 }
 .loading form .line .field label span {
     color: #E20000;
@@ -1824,6 +1826,82 @@ form .line .field input.error {
 }
 
 
+/* covers */
+.covers_warning {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #55002B;
+    margin-bottom: 19px;
+}
+.covers_warning img {
+    margin-right: 11px;
+}
+.covers_text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2C3036;   
+    margin-bottom: 16px;
+}
+.covers_title {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2C3036;
+    margin-bottom: 16px;
+}
+.covers .covers_list {
+    list-style: none;
+    margin-bottom: 48px;
+}
+.covers .covers_list li {
+    padding-left: 21px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2C3036;
+    position: relative;
+}
+.covers .covers_list li:before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #2C3036;
+    left: 8px;
+    top: 8px;
+}
+.loading.covers form .line .field label .covers_label {
+    margin-left: 0;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #2C3036;
+    display: block;
+}
+.covers form button {
+    width: 122px;
+    height: 40px;
+    font-weight: 700;
+    font-size: var(--font_size);
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-right: auto;
+    display: block;
+}
+.covers form button:hover {
+    color: #55002B;
+}
+.covers form {
+    max-width: 100%;
+}
 
 
 @media print, (max-width: 1350px) {
@@ -2382,6 +2460,14 @@ form .line .field input.error {
     }
     .accordion_item .data {
         padding: 20px;
+    }
+
+    .covers .main-content_item-title {
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .covers .covers_list {
+        margin-bottom: 24px;
     }
 
 

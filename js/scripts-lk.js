@@ -115,7 +115,7 @@ $(() => {
         }
     })
     // Удаление файла
-    $('.form .file .selected .remove').click(function(e) {
+    $('form .file .selected .remove').click(function(e) {
         e.preventDefault()
         let parent = $(this).closest('.file')
         $(this).closest('div').remove()
