@@ -1647,6 +1647,7 @@ form .line .field input.error {
     margin: 0 0 3px 8px;
     border:none;
 }
+/*
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
     background-color: transparent;
     border: none;
@@ -1667,26 +1668,33 @@ form .line .field input.error {
     left: auto;
     margin-top: -3px;
     font-size: 1.3em;
+}*/
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    right: 5px;
+    top: 5px;
+    border: none;
+    color:#fff;
+    left:inherit;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:focus {
     background-color: transparent;
     color: #fff;
 }
 .select2-container {
-    width: 100% !important;
+    /*width: 100% !important;*/
 }
-.select2-container::before {
+.select2.select2-container::before {
     position: absolute;
     content: "";
     background: url(../images/dropdown.svg);
     width: 15px;
     height: 10px;
     right: 15px;
-    top: 50%;
+    top: 25px;
     transform: translateY(-50%);
     z-index: 1;
 }
-.select2-container--open::before {
+.select2.select2-container--open::before {
     position: absolute;
     content: "";
     background: url(../images/dropdown.svg);
@@ -1697,6 +1705,8 @@ form .line .field input.error {
     transform: rotate(180deg);
     z-index: 1;
 }
+
+
 
 .tracklist {
     margin-bottom: 28px;

@@ -95,12 +95,38 @@ $(() => {
         $(this).closest('.file').find('label').text($(this).val())
     })
     $('.js-example-basic-multiple').select2({
-        language: "ru"
+        language: "ru",
+        closeOnSelect : false
     });
-    new Sortable(example1, {
-        animation: 150,
-        ghostClass: 'blue-background-class'
+
+    $('.js-example-basic-multiple').on("select2:select", function (e) { 
+        var data = e.params.data.id;
+        if(data=='all'){
+            $(this).find("option").prop("selected","selected");
+            $(this).trigger("change");
+       }
     });
+
+    $('.js-example-basic-multiple').on("select2:unselect", function (e) { 
+        var data = e.params.data.id;
+        if(data=='all'){
+            $(this).find("option").prop("selected",false);
+            $(this).trigger("change");
+       }
+    });
+
+    $('.js-example-basic-multiple').on('select2:opening select2:closing', function( event ) {
+        var $searchfield = $(this).parent().find('.select2-search__field');
+        $searchfield.prop('disabled', true);
+    });
+
+    if($("#example1").length>0)
+    {
+	    new Sortable(example1, {
+	        animation: 150,
+	        ghostClass: 'blue-background-class'
+	    });
+	}
     // Аккордион
     $('body').on('click', '.accordion .accordion_item .head', function(e) {
         e.preventDefault()
