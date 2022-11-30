@@ -1952,6 +1952,46 @@ form .line .field label span.input__file-button-text {
     width: 100%;
 }
 
+.loading.covers .line .photo_img {
+    margin-bottom: 16px;
+}
+.loading.covers .line .photo_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #D9D9D9;
+    border-radius: 6px;
+}
+.photo_name {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F2EEE9;
+    border-radius: 6px;
+}
+.photo_name span {
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 131px; 
+    display: block;   
+}
+.photo_item {
+    width: 177px;
+}
+.covers form button.photo_name-btn {
+    width: 10px;
+    height: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #56595D;
+}
+.covers form button.photo_name-btn img {
+    display: block;
+    margin-left: 3px;
+}
 
 
 @media print, (max-width: 1350px) {

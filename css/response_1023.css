@@ -344,6 +344,9 @@
     .news_right .news_item:nth-child(1){
         height: auto;
     }
+    .loading.covers .line .photo_img {
+        margin-bottom: 8px;
+    }
     
 
     
